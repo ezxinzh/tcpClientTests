@@ -9,9 +9,7 @@ namespace guohui
 {
 void *logHandleFunc(void *arg)
 {
-    printf("======do here fun:%s line:%d\n", __FUNCTION__, __LINE__);
     guohui::logHandle * lp = (guohui::logHandle*)arg;
-
     lp->sendlineToServer();
 }
 
@@ -44,7 +42,7 @@ void logHandle::sendlineToServer()
         if(!line.empty())
         {
             write(sockfd_, line.c_str(), line.length());
-            std::cout<<line.c_str()<<endl;
+//            std::cout<<line.c_str()<<endl;
         }
         usleep(500000);
     }

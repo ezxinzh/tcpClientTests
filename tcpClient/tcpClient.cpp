@@ -17,14 +17,10 @@ namespace guohui
 {
 tcpClient::tcpClient(int port, string addr):
         serverPort_(port),
-<<<<<<< HEAD
         connfd_(0),
         mutex_(PTHREAD_MUTEX_INITIALIZER),
         cond_(PTHREAD_COND_INITIALIZER),
         connStatus_(CONNECTING)
-=======
-        connfd_(0)
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
 {
     strcpy(addr_, addr.c_str());
 //    printf("======port:%d addr:%s\n", serverPort_, addr_);
@@ -50,18 +46,16 @@ bool tcpClient::buildConnect()
     else
     {
         printf("======connect server:%s successful.\n", inet_ntoa(serverAddr_.sin_addr));
-        write(connfd_, "hello server, i am client.\n", strlen("hello server, i am client.\n"));
+        write(connfd_, "hello server, i am log client.\n", strlen("hello server, i am client.\n"));
     }
-    printf("======fun:%s line:%d connfd:%d\n", __FUNCTION__, __LINE__, this->getConnfd());
-<<<<<<< HEAD
+    printf("======file[%s] fun[%s] line[%d] connfd:%d\n", \
+            __FILE__, __FUNCTION__, __LINE__, this->getConnfd());
 
     pthread_mutex_lock(&mutex_);
     connStatus_ = CONNECTED;
     pthread_cond_signal(&cond_);
     pthread_mutex_unlock(&mutex_);
 
-=======
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     return true;
 }
 
@@ -71,26 +65,18 @@ void tcpClient::handle_connection()
     char recvline[MAXLINE] = {0};
 //    int maxfdp, stdineof;
     struct pollfd pfds[2];
-<<<<<<< HEAD
     /* 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
-=======
-    /* ������������� */
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     int n;
     if(connfd_ < 0)
         return;
     pfds[0].fd = connfd_;
     pfds[0].events = POLLIN;
-<<<<<<< HEAD
     /* 锟斤拷颖锟阶硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
-=======
-    /* ��ӱ�׼���������� */
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     pfds[1].fd = STDIN_FILENO;
     pfds[1].events = POLLIN;
     int cnt = 0;
     char buf[256] = {0};
-    char buf1[256] = "\n                       hello, welcome to my world";
+    char buf1[256] = "hello, i am log client.";
 
     while(1)
     {
@@ -105,20 +91,16 @@ void tcpClient::handle_connection()
                 close(pfds[0].fd);
             }
             write(STDOUT_FILENO, recvline, n);
-            write(STDOUT_FILENO, "\n", n);
             if(cnt >= 32767)
                 cnt = 0;
             cnt += 1;
-            sprintf(buf, " %d times\n", cnt);
-            strcpy(sendline, buf1);
-            strcat(sendline, buf);
-            write(pfds[0].fd, sendline, strlen(sendline));
+//            memset(sendline, 0, sizeof(sendline)/sizeof(char));
+//            sprintf(buf, " %d times\n", cnt);
+//            strcpy(sendline, buf1);
+//            strcat(sendline, buf);
+            write(pfds[0].fd, buf1, strlen(buf1));
         }
-<<<<<<< HEAD
-        /* 锟斤拷锟皆憋拷准锟斤拷锟斤拷锟角凤拷准锟斤拷锟斤拷 */
-=======
-        /* ���Ա�׼�����Ƿ�׼���� */
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
+
         if(pfds[1].revents & POLLIN)
         {
             n = read(STDIN_FILENO, recvline, MAXLINE);
@@ -132,7 +114,6 @@ void tcpClient::handle_connection()
     }
 }
 
-<<<<<<< HEAD
 void tcpClient::condWait()
 {
     pthread_mutex_lock(&mutex_);
@@ -144,11 +125,6 @@ void tcpClient::condWait()
 
 void *tcpClientFunc(void *arg)
 {
-=======
-void *tcpClientFunc(void *arg)
-{
-    printf("======3\n");
->>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     guohui::tcpClient *cp = (guohui::tcpClient*)arg;
     cp->buildConnect();
     cp->handle_connection();
