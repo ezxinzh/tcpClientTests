@@ -38,7 +38,7 @@ using namespace guohui;
 #define max( a, b) (a > b) ? a : b
 #define THREAD_NUMS 2
 
-static bool newThread(pthread_t pthreadId, void *_start_routine(void *), void *_arg)
+static bool newThread(pthread_t &pthreadId, void *_start_routine(void *), void *_arg)
 {
     if(pthread_create(&pthreadId, NULL, _start_routine, _arg))
     {
@@ -59,13 +59,14 @@ int main( int argc, char *argv[])
 
     /*==========================connect server==========================*/
     string buf = DEFAULT_ADDR;
-    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf);
+    string buf1 = LOG_LOCATION;
+    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf, buf1);
     newThread(threadIds[0], &guohui::tcpClientFunc, client1);
-    client1->condWait();
-    printf("======file[%s] fun[%s] line[%d] connection established.\n", \
-            __FILE__, __FUNCTION__, __LINE__);
+//    client1->condWait();
+//    printf("======file[%s] fun[%s] line[%d] connection established.\n", \
+//            __FILE__, __FUNCTION__, __LINE__);
     /*==========================log seng==========================*/
-#if 1
+#if 0
     string buf1 = LOG_LOCATION;
     guohui::logHandle* logHand_1 = new guohui::logHandle(buf1);
     if(client1->getConnfd() > 0)

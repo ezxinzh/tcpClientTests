@@ -33,10 +33,11 @@ void logHandle::sendlineToServer()
         }
         else
         {
+            cout <<"no such file" << endl;
             in_.clear();
             in_.close();
             in_.open(logFile_);
-            cout <<"no such file" << endl;
+            cout <<"open %s again"<< logFile_<< endl;
         }
 
         if(!line.empty())
@@ -44,6 +45,29 @@ void logHandle::sendlineToServer()
             write(sockfd_, line.c_str(), line.length());
 //            std::cout<<line.c_str()<<endl;
         }
+        usleep(500000);
+    }
+}
+
+void logHandle::sendFileLineByLine()
+{
+    string line;
+    for(;;)
+    {
+        if(in_)
+        {
+            getline(in_, line);
+        }
+        else
+        {
+            in_.clear();
+            in_.close();
+            in_.open(logFile_);
+            cout <<"no such file" << endl;
+        }
+
+        if(!line.empty())
+            write(sockfd_, line.c_str(), line.length());
         usleep(500000);
     }
 }

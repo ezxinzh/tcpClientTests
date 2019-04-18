@@ -15,6 +15,7 @@
 #include <string.h>
 #include <string>
 #include "../logHandle/logHandle.h"
+#include "createThread.h"
 
 using namespace std;
 
@@ -30,10 +31,12 @@ enum connStatus_t
     CONNECTING = 0,
     CONNECTED
 };
-class tcpClient
+class tcpClient:public createThread
 {
 public:
-    tcpClient(int port, string addr);
+    tcpClient(int port, string addr, string logfile);
+    virtual ~tcpClient();
+//    bool newThread(pthread_t pthreadId, void *_start_routine(void *), void *_arg) override;
     bool buildConnect();
     void handle_connection();
     int getConnfd()
@@ -41,6 +44,7 @@ public:
         return connfd_;
     }
     void condWait();
+    guohui::logHandle* get_logHandle_();
 
 private:
     struct sockaddr_in serverAddr_;
@@ -50,6 +54,7 @@ private:
     pthread_mutex_t mutex_;
     pthread_cond_t cond_ GUARDED_BY(mutex_);
     connStatus_t connStatus_ GUARDED_BY(mutex_);
+    guohui::logHandle* logHandle_;
 };
 
 void *tcpClientFunc(void *arg);
