@@ -1,0 +1,1615 @@
+Fri Mar 22 14:28:23 2019: AC Log(0): [Info]: Received carrierEnabled from TRXM0 portBit:0xffffffff.
+Fri Mar 22 14:28:23 2019: AC Log(0): [Info]: Session updated: antBitmap0_31=ffffffff, antBitmap32_63=0, carrierEnabled=0
+
+Fri Mar 22 14:28:24 2019: AC Log(0): [Info]: Received carrierEnabled from TRXM1 portBit:0xffffffff.
+Fri Mar 22 14:28:24 2019: AC Log(0): [Info]: Session updated: antBitmap0_31=ffffffff, antBitmap32_63=ffffffff, carrierEnabled=1
+
+Fri Mar 22 14:28:24 2019: AC Log(0): [Info]: AC Session Started: carrier 0, freq 3450000.
+
+Fri Mar 22 14:28:24 2019: AC Log(0): [DBG]: hwdb log: amplitDbAvg[0] = 0.381132, amplitDbAvg[1] = 0.381132.
+Fri Mar 22 14:28:24 2019: AC Log(0): [DBG]: hwdb log: delayDbAvg = 46.000000.
+Fri Mar 22 14:28:24 2019: AC Log(0): [DBG]: hwdb log: phaseDbAvg = 50482.593750.
+Fri Mar 22 14:28:24 2019: AC Log(0): [Info]: tick 37727: time's up for carrier 0.
+
+Fri Mar 22 14:28:24 2019: AC Log(0): [Info]: ------ tick 37730: AC start up delay 120 s.------
+ 
+Fri Mar 22 14:30:24 2019: AC Log(0): [Info]: tick 49729: time's up for carrier 0.
+
+Fri Mar 22 14:30:24 2019: AC Log(0): [DBG]: Notify TRXM to config ac...
+Fri Mar 22 14:30:25 2019: AC Log(0): [DBG]: BP send MSG_TRXM_AC_TRIGGER to inform TRXM0 to configure AC
+Fri Mar 22 14:30:25 2019: AC Log(0): [DBG]: BP send MSG_TRXM_AC_TRIGGER to inform TRXM1 to configure AC
+Fri Mar 22 14:30:25 2019: AC Log(0): [Info]: tmo Timer is created already,now recreat it...
+Fri Mar 22 14:30:25 2019: AC Log(0): [Info]: ------ tick 49740: AC waitACConfig delay 10 s.------
+ 
+Fri Mar 22 14:30:25 2019: AC Log(0): [DBG]: AcDispatcher:  Received acTriggerRsp msg from trxm0
+Fri Mar 22 14:30:25 2019: AC Log(0): [DBG]: AcDispatcher:  Received acTriggerRsp msg from trxm1
+Fri Mar 22 14:30:34 2019: AC Log(0): [Info]: tick 50739: time's up for carrier 0.
+
+Fri Mar 22 14:30:35 2019: AC Log(0): [DBG]: AcDispatcher checkAcOnProgress.
+Fri Mar 22 14:30:35 2019: AC Log(0): [Info]: ------ AC run for carrierId 0 interval 300 s.------
+Fri Mar 22 14:30:35 2019: AC Log(0): [DBG]: Set FPGA AC Para Register, carrierId 0.
+Fri Mar 22 14:30:35 2019: AC Log(0): [Info]: Start AC for CarrierId 0.
+Fri Mar 22 14:30:35 2019: AC Log(0): [DBG]: AcDispatcher:  Received acTriggerRsp msg from trxm0
+Fri Mar 22 14:30:36 2019: AC Log(0): [Info]: BP AC interrupt received, type = 1
+
+Fri Mar 22 14:30:37 2019: AC Log(0): [Info]: BP AC interrupt received, type = 2
+
+Fri Mar 22 14:30:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 0, acDoneStatus 1, delay 173748, phase 7028, amplit 6668, chanSCdB 765, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 1, acDoneStatus 1, delay 174325, phase -719, amplit 6404, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:41 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 2, acDoneStatus 1, delay 174156, phase 6487, amplit 6332, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 3, acDoneStatus 1, delay 174725, phase 9704, amplit 6276, chanSCdB 759, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 4, acDoneStatus 1, delay 176255, phase -28847, amplit 6328, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:44 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 5, acDoneStatus 1, delay 177000, phase 22704, amplit 6540, chanSCdB 763, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 6, acDoneStatus 1, delay 176381, phase 32255, amplit 6500, chanSCdB 762, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:46 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 7, acDoneStatus 1, delay 176435, phase -22472, amplit 6404, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 8, acDoneStatus 1, delay 169982, phase -18481, amplit 6304, chanSCdB 760, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:48 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 9, acDoneStatus 1, delay 169777, phase -19481, amplit 6244, chanSCdB 759, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 10, acDoneStatus 1, delay 170174, phase 26139, amplit 6360, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 11, acDoneStatus 1, delay 170115, phase -27939, amplit 6332, chanSCdB 760, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:51 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 12, acDoneStatus 1, delay 176800, phase -21551, amplit 6284, chanSCdB 759, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:52 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 13, acDoneStatus 1, delay 176390, phase 29256, amplit 6196, chanSCdB 758, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:54 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 14, acDoneStatus 1, delay 177000, phase 10509, amplit 6500, chanSCdB 762, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 15, acDoneStatus 1, delay 176212, phase 22947, amplit 6236, chanSCdB 759, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:56 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 16, acDoneStatus 1, delay 319267, phase 11016, amplit 6540, chanSCdB 763, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:57 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 17, acDoneStatus 1, delay 320065, phase -8601, amplit 6388, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:58 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 18, acDoneStatus 1, delay 319652, phase 14169, amplit 6496, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:30:59 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 19, acDoneStatus 1, delay 320632, phase 27720, amplit 6528, chanSCdB 763, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:01 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 20, acDoneStatus 1, delay 317438, phase -2061, amplit 6424, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:02 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 21, acDoneStatus 1, delay 317960, phase -6877, amplit 6532, chanSCdB 763, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:03 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 22, acDoneStatus 1, delay 317964, phase 15504, amplit 6648, chanSCdB 764, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:04 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 23, acDoneStatus 1, delay 318088, phase 13019, amplit 6532, chanSCdB 763, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:05 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 24, acDoneStatus 1, delay 319216, phase 18104, amplit 6852, chanSCdB 767, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:06 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 25, acDoneStatus 1, delay 319135, phase 21050, amplit 6344, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:07 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 26, acDoneStatus 1, delay 319222, phase 3320, amplit 6812, chanSCdB 766, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:08 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 27, acDoneStatus 1, delay 319280, phase 16471, amplit 6584, chanSCdB 764, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:09 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 28, acDoneStatus 1, delay 321759, phase -19567, amplit 6732, chanSCdB 765, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:10 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 29, acDoneStatus 1, delay 321858, phase -19256, amplit 6460, chanSCdB 762, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:11 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 30, acDoneStatus 1, delay 321290, phase -25556, amplit 6984, chanSCdB 769, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:12 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 31, acDoneStatus 1, delay 321143, phase -11946, amplit 6704, chanSCdB 765, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:14 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 32, acDoneStatus 1, delay 165669, phase -4595, amplit 6696, chanSCdB 765, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:15 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 33, acDoneStatus 1, delay 166077, phase -13295, amplit 6616, chanSCdB 764, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:16 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 34, acDoneStatus 1, delay 165613, phase -6002, amplit 6788, chanSCdB 766, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:17 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 35, acDoneStatus 1, delay 165743, phase -4120, amplit 6644, chanSCdB 764, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:18 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 36, acDoneStatus 1, delay 163384, phase 11899, amplit 6668, chanSCdB 765, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:19 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 37, acDoneStatus 1, delay 162808, phase 8379, amplit 6532, chanSCdB 763, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:20 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 38, acDoneStatus 1, delay 164514, phase 12121, amplit 6544, chanSCdB 763, disturb 14, noShift 2, agcFct 2.
+
+Fri Mar 22 14:31:22 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 39, acDoneStatus 1, delay 163098, phase 23851, amplit 6468, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:23 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 40, acDoneStatus 1, delay 165690, phase 18368, amplit 6588, chanSCdB 764, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:24 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 41, acDoneStatus 1, delay 166006, phase 20630, amplit 6376, chanSCdB 761, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:25 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 42, acDoneStatus 1, delay 165006, phase 8065, amplit 6332, chanSCdB 760, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:26 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 43, acDoneStatus 1, delay 165652, phase 14906, amplit 6388, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:27 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 44, acDoneStatus 1, delay 168135, phase -26503, amplit 6312, chanSCdB 760, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:28 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 45, acDoneStatus 1, delay 167436, phase 25180, amplit 6360, chanSCdB 761, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:29 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 46, acDoneStatus 1, delay 167763, phase 6216, amplit 6260, chanSCdB 759, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:30 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 47, acDoneStatus 1, delay 167589, phase 16700, amplit 6324, chanSCdB 760, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:31 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 48, acDoneStatus 1, delay 308227, phase 30893, amplit 6508, chanSCdB 763, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:32 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 49, acDoneStatus 1, delay 308272, phase 13868, amplit 6424, chanSCdB 761, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:34 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 50, acDoneStatus 1, delay 308962, phase -31783, amplit 6492, chanSCdB 762, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:35 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 51, acDoneStatus 1, delay 309802, phase -23581, amplit 6624, chanSCdB 764, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:36 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 52, acDoneStatus 1, delay 310381, phase -20900, amplit 6600, chanSCdB 764, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:37 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 53, acDoneStatus 1, delay 310220, phase -23482, amplit 6488, chanSCdB 762, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 54, acDoneStatus 1, delay 310696, phase -8110, amplit 6500, chanSCdB 762, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 55, acDoneStatus 1, delay 310839, phase -9574, amplit 6876, chanSCdB 767, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:40 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 56, acDoneStatus 1, delay 310285, phase 823, amplit 6780, chanSCdB 766, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 57, acDoneStatus 1, delay 309881, phase 1888, amplit 6956, chanSCdB 768, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 58, acDoneStatus 1, delay 310923, phase -17099, amplit 7012, chanSCdB 769, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:44 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 59, acDoneStatus 1, delay 310064, phase -5543, amplit 6832, chanSCdB 767, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 60, acDoneStatus 1, delay 306170, phase 18975, amplit 6304, chanSCdB 760, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:46 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 61, acDoneStatus 1, delay 305773, phase 19806, amplit 7036, chanSCdB 769, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 62, acDoneStatus 1, delay 306471, phase 16554, amplit 6552, chanSCdB 763, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:31:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 63, acDoneStatus 1, delay 305598, phase 25509, amplit 7288, chanSCdB 772, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:31:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 0, acDoneStatus 1, delay -78140, phase 19587, amplit 891, chanSCdB 590, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 1, acDoneStatus 1, delay -77700, phase -21548, amplit 897, chanSCdB 590, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:51 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 2, acDoneStatus 1, delay -73157, phase -21900, amplit 875, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:52 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 3, acDoneStatus 1, delay -73324, phase 2369, amplit 873, chanSCdB 588, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:53 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 4, acDoneStatus 1, delay -77856, phase -4099, amplit 866, chanSCdB 587, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 5, acDoneStatus 1, delay -76922, phase 18654, amplit 889, chanSCdB 590, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:56 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 6, acDoneStatus 1, delay -73186, phase 17577, amplit 879, chanSCdB 589, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:57 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 7, acDoneStatus 1, delay -73561, phase -29347, amplit 878, chanSCdB 589, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:58 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 8, acDoneStatus 1, delay -78553, phase -20296, amplit 860, chanSCdB 587, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:31:59 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 9, acDoneStatus 1, delay -77452, phase 4068, amplit 870, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:00 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 10, acDoneStatus 1, delay -73157, phase -13121, amplit 880, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:01 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 11, acDoneStatus 1, delay -73574, phase 12076, amplit 860, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:02 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 12, acDoneStatus 1, delay -78237, phase -4441, amplit 877, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:03 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 13, acDoneStatus 1, delay -77510, phase -27355, amplit 878, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:04 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 14, acDoneStatus 1, delay -72692, phase -7080, amplit 885, chanSCdB 589, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:05 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 15, acDoneStatus 1, delay -73618, phase 22736, amplit 900, chanSCdB 591, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:06 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 16, acDoneStatus 1, delay -78364, phase 12064, amplit 918, chanSCdB 592, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:07 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 17, acDoneStatus 1, delay -77205, phase -30679, amplit 883, chanSCdB 589, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:09 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 18, acDoneStatus 1, delay -81849, phase 29302, amplit 895, chanSCdB 590, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:10 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 19, acDoneStatus 1, delay -82045, phase -1962, amplit 913, chanSCdB 592, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:11 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 20, acDoneStatus 1, delay -78311, phase 2319, amplit 890, chanSCdB 590, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:12 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 21, acDoneStatus 1, delay -77867, phase -20722, amplit 890, chanSCdB 590, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:13 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 22, acDoneStatus 1, delay -82164, phase 22890, amplit 901, chanSCdB 591, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:14 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 23, acDoneStatus 1, delay -82683, phase -8443, amplit 901, chanSCdB 591, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:15 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 24, acDoneStatus 1, delay -78702, phase 22290, amplit 918, chanSCdB 592, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:16 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 25, acDoneStatus 1, delay -77863, phase 1334, amplit 884, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:17 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 26, acDoneStatus 1, delay -81979, phase -7454, amplit 900, chanSCdB 591, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:18 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 27, acDoneStatus 1, delay -82735, phase -28332, amplit 890, chanSCdB 590, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:19 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 28, acDoneStatus 1, delay -78277, phase 31958, amplit 889, chanSCdB 590, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:20 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 29, acDoneStatus 1, delay -77561, phase 11754, amplit 880, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:21 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 30, acDoneStatus 1, delay -82330, phase -17550, amplit 886, chanSCdB 589, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:23 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 31, acDoneStatus 1, delay -82749, phase 27261, amplit 904, chanSCdB 591, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:24 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 32, acDoneStatus 1, delay -69127, phase 30802, amplit 872, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:25 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 33, acDoneStatus 1, delay -68202, phase -12321, amplit 895, chanSCdB 590, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:26 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 34, acDoneStatus 1, delay -64237, phase -15372, amplit 882, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:27 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 35, acDoneStatus 1, delay -64563, phase 8185, amplit 873, chanSCdB 588, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:28 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 36, acDoneStatus 1, delay -69140, phase 32143, amplit 888, chanSCdB 590, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:29 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 37, acDoneStatus 1, delay -69544, phase -4190, amplit 882, chanSCdB 589, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:30 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 38, acDoneStatus 1, delay -63138, phase -12451, amplit 845, chanSCdB 585, disturb 14, noShift 2, agcFct 0.
+
+Fri Mar 22 14:32:31 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 39, acDoneStatus 1, delay -65592, phase 11117, amplit 863, chanSCdB 587, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:32 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 40, acDoneStatus 1, delay -69534, phase -99, amplit 867, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:33 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 41, acDoneStatus 1, delay -67909, phase 22485, amplit 871, chanSCdB 588, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:34 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 42, acDoneStatus 1, delay -64798, phase -1292, amplit 856, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:35 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 43, acDoneStatus 1, delay -64360, phase 20297, amplit 869, chanSCdB 588, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:37 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 44, acDoneStatus 1, delay -69387, phase 19487, amplit 854, chanSCdB 586, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 45, acDoneStatus 1, delay -68728, phase -3051, amplit 876, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 46, acDoneStatus 1, delay -64136, phase 17282, amplit 858, chanSCdB 587, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:40 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 47, acDoneStatus 1, delay -64817, phase -22030, amplit 901, chanSCdB 591, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:41 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 48, acDoneStatus 1, delay -69820, phase 8833, amplit 859, chanSCdB 587, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 49, acDoneStatus 1, delay -69333, phase -26950, amplit 865, chanSCdB 587, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 50, acDoneStatus 1, delay -72979, phase -22195, amplit 841, chanSCdB 585, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:44 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 51, acDoneStatus 1, delay -73369, phase 11591, amplit 845, chanSCdB 585, disturb 11, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 52, acDoneStatus 1, delay -69596, phase 13058, amplit 846, chanSCdB 585, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:46 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 53, acDoneStatus 1, delay -69625, phase -9627, amplit 853, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 54, acDoneStatus 1, delay -73208, phase 16596, amplit 856, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:48 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 55, acDoneStatus 1, delay -73588, phase -16568, amplit 883, chanSCdB 589, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 56, acDoneStatus 1, delay -70050, phase 2448, amplit 869, chanSCdB 588, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 57, acDoneStatus 1, delay -69331, phase -21735, amplit 876, chanSCdB 588, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:51 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 58, acDoneStatus 1, delay -73180, phase 14298, amplit 864, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:52 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 59, acDoneStatus 1, delay -74256, phase -9324, amplit 862, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:53 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 60, acDoneStatus 1, delay -69824, phase -9371, amplit 860, chanSCdB 587, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:54 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 61, acDoneStatus 1, delay -69776, phase -25565, amplit 879, chanSCdB 589, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 62, acDoneStatus 1, delay -73302, phase -27417, amplit 872, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 63, acDoneStatus 1, delay -74738, phase 17165, amplit 855, chanSCdB 586, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: AcDispatcher Carrier0 All Port DL&UL AC Done.
+Fri Mar 22 14:32:57 2019: AC Log(0): [DBG]: AcDispatcher detectDelayFault carrier0.
+Fri Mar 22 14:32:57 2019: AC Log(0): [DBG]: ReportAcFactor: chanSCdBAvg 675, dBSum 86485.
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: AC Type: Pre-AC
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 0, direct 0, delay 109ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 1, direct 0, delay 109ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 2, direct 0, delay 109ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 3, direct 0, delay 109ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 4, direct 0, delay 110ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 5, direct 0, delay 111ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 6, direct 0, delay 110ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 7, direct 0, delay 110ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 8, direct 0, delay 106ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 9, direct 0, delay 106ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 10, direct 0, delay 106ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 11, direct 0, delay 106ns.
+
+Fri Mar 22 14:32:57 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 12, direct 0, delay 111ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 13, direct 0, delay 110ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 14, direct 0, delay 111ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 15, direct 0, delay 110ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 16, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 17, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 18, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 19, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 20, direct 0, delay 198ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 21, direct 0, delay 199ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 22, direct 0, delay 199ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 23, direct 0, delay 199ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 24, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 25, direct 0, delay 199ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 26, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 27, direct 0, delay 200ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 28, direct 0, delay 201ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 29, direct 0, delay 201ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 30, direct 0, delay 201ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 31, direct 0, delay 201ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 0, direct 0.
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 0, direct 0.
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 0, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 1, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:58 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 2, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 3, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 4, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 5, direct 1, delay -48ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 6, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 7, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 8, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 9, direct 1, delay -48ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 10, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 11, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 12, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 13, direct 1, delay -48ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 14, direct 1, delay -45ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 15, direct 1, delay -46ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 16, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 17, direct 1, delay -48ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 18, direct 1, delay -51ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 19, direct 1, delay -51ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 20, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 21, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 22, direct 1, delay -51ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 23, direct 1, delay -52ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 24, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 25, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 26, direct 1, delay -51ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 27, direct 1, delay -52ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 28, direct 1, delay -49ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 29, direct 1, delay -48ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 30, direct 1, delay -51ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 0 for carrier 0, port 31, direct 1, delay -52ns.
+
+Fri Mar 22 14:32:59 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 0, direct 1.
+Fri Mar 22 14:33:01 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 0, direct 1.
+Fri Mar 22 14:33:01 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 32, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:01 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 33, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 34, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 35, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 36, direct 0, delay 102ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 37, direct 0, delay 102ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 38, direct 0, delay 103ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 39, direct 0, delay 102ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 40, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 41, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 42, direct 0, delay 103ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 43, direct 0, delay 104ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 44, direct 0, delay 105ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 45, direct 0, delay 105ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 46, direct 0, delay 105ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 47, direct 0, delay 105ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 48, direct 0, delay 193ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 49, direct 0, delay 193ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 50, direct 0, delay 193ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 51, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 52, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 53, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 54, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 55, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 56, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 57, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 58, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 59, direct 0, delay 194ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 60, direct 0, delay 191ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 61, direct 0, delay 191ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 62, direct 0, delay 192ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 63, direct 0, delay 191ns.
+
+Fri Mar 22 14:33:02 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 1, direct 0.
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 1, direct 0.
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 32, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 33, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 34, direct 1, delay -40ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 35, direct 1, delay -40ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 36, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 37, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 38, direct 1, delay -39ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 39, direct 1, delay -41ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 40, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 41, direct 1, delay -42ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 42, direct 1, delay -40ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 43, direct 1, delay -40ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 44, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 45, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 46, direct 1, delay -40ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 47, direct 1, delay -41ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 48, direct 1, delay -44ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 49, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 50, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 51, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 52, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 53, direct 1, delay -44ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 54, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 55, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 56, direct 1, delay -44ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 57, direct 1, delay -43ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 58, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 59, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:03 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 60, direct 1, delay -44ns.
+
+Fri Mar 22 14:33:04 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 61, direct 1, delay -44ns.
+
+Fri Mar 22 14:33:04 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 62, direct 1, delay -46ns.
+
+Fri Mar 22 14:33:04 2019: AC Log(0): [Info]: Send Pre-AC msg to TRXM 1 for carrier 0, port 63, direct 1, delay -47ns.
+
+Fri Mar 22 14:33:04 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 1, direct 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 1, direct 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [Info]: ------Pre-AC msg handling is done.------
+
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: ------Pre-AC msg handling result:------
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 0, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 0, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 1, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 1, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 2, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:05 2019: AC Log(0): [DBG]: CarrierId 0, port 2, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 3, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 3, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 4, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 4, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 5, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 5, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 6, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 6, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 7, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 7, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 8, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 8, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 9, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 9, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 10, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 10, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 11, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 11, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 12, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 12, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 13, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 13, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 14, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 14, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 15, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 15, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 16, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 16, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 17, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 17, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 18, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 18, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 19, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 19, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 20, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 20, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 21, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 21, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 22, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 22, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 23, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 23, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 24, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 24, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 25, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 25, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 26, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 26, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 27, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 27, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 28, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 28, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 29, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 29, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 30, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 30, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 31, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 31, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 32, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 32, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 33, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 33, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 34, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 34, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 35, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 35, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:06 2019: AC Log(0): [DBG]: CarrierId 0, port 36, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 36, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 37, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 37, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 38, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 38, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 39, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 39, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 40, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 40, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 41, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 41, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 42, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 42, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 43, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 43, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 44, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 44, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 45, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 45, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 46, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 46, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 47, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 47, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 48, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 48, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 49, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 49, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 50, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 50, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 51, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 51, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 52, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 52, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 53, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 53, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 54, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 54, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 55, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 55, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 56, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 56, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 57, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 57, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 58, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 58, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 59, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 59, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 60, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 60, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 61, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 61, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 62, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 62, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 63, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [DBG]: CarrierId 0, port 63, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:33:07 2019: AC Log(0): [Info]: Changed the acType from Pre-AC to Period AC for carrier 0
+Fri Mar 22 14:35:34 2019: AC Log(0): [Info]: tick 80748: time's up for carrier 0.
+
+Fri Mar 22 14:35:35 2019: AC Log(0): [DBG]: AcDispatcher checkAcOnProgress.
+Fri Mar 22 14:35:35 2019: AC Log(0): [Info]: ------ AC run for carrierId 0 interval 300 s.------
+Fri Mar 22 14:35:35 2019: AC Log(0): [DBG]: Set FPGA AC Para Register, carrierId 0.
+Fri Mar 22 14:35:35 2019: AC Log(0): [Info]: Start AC for CarrierId 0.
+Fri Mar 22 14:35:35 2019: AC Log(0): [DBG]: AcDispatcher:  Received acTriggerRsp msg from trxm0
+Fri Mar 22 14:35:35 2019: AC Log(0): [Info]: BP AC interrupt received, type = 1
+
+Fri Mar 22 14:35:37 2019: AC Log(0): [Info]: BP AC interrupt received, type = 2
+
+Fri Mar 22 14:35:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 0, acDoneStatus 1, delay -2032, phase 9087, amplit 6596, chanSCdB 764, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 1, acDoneStatus 1, delay -1455, phase 1334, amplit 6408, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:40 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 2, acDoneStatus 1, delay -1618, phase 8353, amplit 6524, chanSCdB 763, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:41 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 3, acDoneStatus 1, delay -1095, phase 11765, amplit 6320, chanSCdB 760, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 4, acDoneStatus 1, delay 457, phase -26764, amplit 6268, chanSCdB 759, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 5, acDoneStatus 1, delay 1204, phase 24843, amplit 6448, chanSCdB 762, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 6, acDoneStatus 1, delay 527, phase -31361, amplit 6304, chanSCdB 760, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 7, acDoneStatus 1, delay 659, phase -20300, amplit 6336, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:46 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 8, acDoneStatus 1, delay 705, phase -16303, amplit 6200, chanSCdB 758, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 9, acDoneStatus 1, delay 505, phase -17487, amplit 6212, chanSCdB 758, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:48 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 10, acDoneStatus 1, delay 887, phase 28115, amplit 6364, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 11, acDoneStatus 1, delay 818, phase -25806, amplit 6268, chanSCdB 759, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 12, acDoneStatus 1, delay 988, phase -19398, amplit 6240, chanSCdB 759, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:52 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 13, acDoneStatus 1, delay 605, phase 31187, amplit 6224, chanSCdB 759, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:53 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 14, acDoneStatus 1, delay 1177, phase 12613, amplit 6300, chanSCdB 760, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:54 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 15, acDoneStatus 1, delay 466, phase 25132, amplit 6332, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 16, acDoneStatus 1, delay 272, phase 13426, amplit 6372, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 17, acDoneStatus 1, delay 996, phase -6121, amplit 6212, chanSCdB 758, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:56 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 18, acDoneStatus 1, delay 624, phase 16604, amplit 6420, chanSCdB 761, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:58 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 19, acDoneStatus 1, delay 1642, phase 30229, amplit 6368, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:35:59 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 20, acDoneStatus 1, delay -1575, phase 355, amplit 6352, chanSCdB 760, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:00 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 21, acDoneStatus 1, delay -1076, phase -4441, amplit 6380, chanSCdB 761, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:01 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 22, acDoneStatus 1, delay -1006, phase 17718, amplit 6592, chanSCdB 764, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:02 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 23, acDoneStatus 1, delay -984, phase 15516, amplit 6592, chanSCdB 764, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:03 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 24, acDoneStatus 1, delay 174, phase 20602, amplit 6744, chanSCdB 766, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:04 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 25, acDoneStatus 1, delay 95, phase 23458, amplit 6488, chanSCdB 762, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:05 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 26, acDoneStatus 1, delay 178, phase 5680, amplit 6700, chanSCdB 765, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:06 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 27, acDoneStatus 1, delay 221, phase 18860, amplit 6580, chanSCdB 763, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:07 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 28, acDoneStatus 1, delay 2741, phase -17161, amplit 6556, chanSCdB 763, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:08 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 29, acDoneStatus 1, delay 2831, phase -16945, amplit 6644, chanSCdB 764, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:09 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 30, acDoneStatus 1, delay 2262, phase -23348, amplit 6652, chanSCdB 764, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:10 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 31, acDoneStatus 1, delay 2102, phase -9594, amplit 6692, chanSCdB 765, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:11 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 32, acDoneStatus 1, delay -3617, phase -1591, amplit 6512, chanSCdB 763, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:13 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 33, acDoneStatus 1, delay -3221, phase -10237, amplit 6448, chanSCdB 762, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:14 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 34, acDoneStatus 1, delay -3647, phase -2951, amplit 6544, chanSCdB 763, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:15 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 35, acDoneStatus 1, delay -3505, phase -974, amplit 6468, chanSCdB 762, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:15 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 36, acDoneStatus 1, delay 625, phase 15008, amplit 6716, chanSCdB 765, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:16 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 37, acDoneStatus 1, delay 18, phase 11682, amplit 6544, chanSCdB 763, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:18 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 38, acDoneStatus 1, delay 1740, phase 15248, amplit 6452, chanSCdB 762, disturb 14, noShift 2, agcFct 2.
+
+Fri Mar 22 14:36:19 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 39, acDoneStatus 1, delay 299, phase 27248, amplit 6448, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:20 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 40, acDoneStatus 1, delay -3584, phase 21744, amplit 6348, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:21 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 41, acDoneStatus 1, delay -3299, phase 23923, amplit 6356, chanSCdB 760, disturb 9, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:22 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 42, acDoneStatus 1, delay 2266, phase 11224, amplit 6440, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:23 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 43, acDoneStatus 1, delay -3615, phase 18285, amplit 6424, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:24 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 44, acDoneStatus 1, delay -1169, phase -23251, amplit 6252, chanSCdB 759, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:25 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 45, acDoneStatus 1, delay -1845, phase 28324, amplit 6448, chanSCdB 762, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:26 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 46, acDoneStatus 1, delay -1475, phase 9375, amplit 6328, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:28 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 47, acDoneStatus 1, delay -1680, phase 20064, amplit 6360, chanSCdB 761, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:28 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 48, acDoneStatus 1, delay 2238, phase -31603, amplit 6440, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:30 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 49, acDoneStatus 1, delay 2258, phase 16935, amplit 6324, chanSCdB 760, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:31 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 50, acDoneStatus 1, delay 2936, phase -28920, amplit 6404, chanSCdB 761, disturb 7, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:32 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 51, acDoneStatus 1, delay -2700, phase -20611, amplit 6544, chanSCdB 763, disturb 10, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:33 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 52, acDoneStatus 1, delay -2090, phase -17759, amplit 6444, chanSCdB 762, disturb 6, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:34 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 53, acDoneStatus 1, delay -2270, phase -20407, amplit 6480, chanSCdB 762, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:35 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 54, acDoneStatus 1, delay -1817, phase -5073, amplit 6580, chanSCdB 763, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:36 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 55, acDoneStatus 1, delay -1688, phase -6495, amplit 6788, chanSCdB 766, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:37 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 56, acDoneStatus 1, delay -2233, phase 3841, amplit 6712, chanSCdB 765, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 57, acDoneStatus 1, delay -2626, phase 5063, amplit 6644, chanSCdB 764, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 58, acDoneStatus 1, delay -1583, phase -13900, amplit 6820, chanSCdB 767, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:40 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 59, acDoneStatus 1, delay -2474, phase -2373, amplit 6816, chanSCdB 767, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:41 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 60, acDoneStatus 1, delay 180, phase 22129, amplit 6664, chanSCdB 765, disturb 6, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 61, acDoneStatus 1, delay -212, phase 23053, amplit 6676, chanSCdB 765, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 62, acDoneStatus 1, delay 480, phase 19830, amplit 6728, chanSCdB 765, disturb 8, noShift 1, agcFct 2.
+
+Fri Mar 22 14:36:44 2019: AC Log(0): [DBG]: AC output: CarrierId 0, DL, Port 63, acDoneStatus 1, delay -442, phase 28698, amplit 6684, chanSCdB 765, disturb 5, noShift 0, agcFct 2.
+
+Fri Mar 22 14:36:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 0, acDoneStatus 1, delay -51, phase 19139, amplit 885, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 1, acDoneStatus 1, delay 425, phase -21942, amplit 880, chanSCdB 589, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:48 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 2, acDoneStatus 1, delay -1626, phase -22312, amplit 859, chanSCdB 587, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 3, acDoneStatus 1, delay -1769, phase 1950, amplit 855, chanSCdB 586, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 4, acDoneStatus 1, delay 311, phase -4901, amplit 859, chanSCdB 587, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 5, acDoneStatus 1, delay 1224, phase 18235, amplit 872, chanSCdB 588, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:51 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 6, acDoneStatus 1, delay -1580, phase 16884, amplit 861, chanSCdB 587, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:53 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 7, acDoneStatus 1, delay -2013, phase -29802, amplit 859, chanSCdB 587, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:54 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 8, acDoneStatus 1, delay -433, phase -21202, amplit 849, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:55 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 9, acDoneStatus 1, delay 635, phase 3587, amplit 853, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:56 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 10, acDoneStatus 1, delay -1570, phase -13919, amplit 860, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:57 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 11, acDoneStatus 1, delay -1943, phase 11154, amplit 854, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:58 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 12, acDoneStatus 1, delay -144, phase -4975, amplit 858, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:36:59 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 13, acDoneStatus 1, delay 596, phase -27903, amplit 856, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:00 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 14, acDoneStatus 1, delay -1120, phase -7595, amplit 868, chanSCdB 588, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:01 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 15, acDoneStatus 1, delay -2024, phase 22191, amplit 887, chanSCdB 589, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:02 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 16, acDoneStatus 1, delay -274, phase 11625, amplit 890, chanSCdB 590, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:03 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 17, acDoneStatus 1, delay 895, phase -31074, amplit 856, chanSCdB 586, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:04 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 18, acDoneStatus 1, delay 2739, phase 28869, amplit 867, chanSCdB 587, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:05 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 19, acDoneStatus 1, delay 2556, phase -2403, amplit 883, chanSCdB 589, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:06 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 20, acDoneStatus 1, delay -233, phase 1822, amplit 858, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:07 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 21, acDoneStatus 1, delay 182, phase -21185, amplit 860, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:09 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 22, acDoneStatus 1, delay 2471, phase 22459, amplit 871, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:10 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 23, acDoneStatus 1, delay 1929, phase -8947, amplit 874, chanSCdB 588, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:10 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 24, acDoneStatus 1, delay -567, phase 21785, amplit 897, chanSCdB 590, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:11 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 25, acDoneStatus 1, delay 197, phase 864, amplit 860, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:12 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 26, acDoneStatus 1, delay 2627, phase -7942, amplit 881, chanSCdB 589, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:13 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 27, acDoneStatus 1, delay 1859, phase -28868, amplit 869, chanSCdB 588, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:15 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 28, acDoneStatus 1, delay -154, phase 31480, amplit 868, chanSCdB 588, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:16 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 29, acDoneStatus 1, delay 526, phase 11335, amplit 858, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:17 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 30, acDoneStatus 1, delay 2301, phase -18057, amplit 868, chanSCdB 588, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:18 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 31, acDoneStatus 1, delay 1840, phase 26758, amplit 888, chanSCdB 589, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:19 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 32, acDoneStatus 1, delay 2461, phase 29644, amplit 861, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:20 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 33, acDoneStatus 1, delay 3368, phase -14045, amplit 870, chanSCdB 588, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:21 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 34, acDoneStatus 1, delay 821, phase -16463, amplit 858, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:22 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 35, acDoneStatus 1, delay 515, phase 7091, amplit 853, chanSCdB 586, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:23 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 36, acDoneStatus 1, delay 2434, phase 30945, amplit 862, chanSCdB 587, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:24 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 37, acDoneStatus 1, delay 2075, phase -5331, amplit 859, chanSCdB 587, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:25 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 38, acDoneStatus 1, delay 1924, phase -13835, amplit 827, chanSCdB 583, disturb 14, noShift 2, agcFct 0.
+
+Fri Mar 22 14:37:26 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 39, acDoneStatus 1, delay -492, phase 9608, amplit 857, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:27 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 40, acDoneStatus 1, delay 2155, phase -703, amplit 863, chanSCdB 587, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:28 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 41, acDoneStatus 1, delay -2837, phase 21286, amplit 853, chanSCdB 586, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:29 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 42, acDoneStatus 1, delay 269, phase -2510, amplit 840, chanSCdB 585, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:30 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 43, acDoneStatus 1, delay 767, phase 19593, amplit 862, chanSCdB 587, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:31 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 44, acDoneStatus 1, delay 2222, phase 18244, amplit 838, chanSCdB 584, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:32 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 45, acDoneStatus 1, delay 2843, phase -4710, amplit 853, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:33 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 46, acDoneStatus 1, delay 925, phase 15535, amplit 851, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:34 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 47, acDoneStatus 1, delay 251, phase -23290, amplit 885, chanSCdB 589, disturb 9, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:36 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 48, acDoneStatus 1, delay 1820, phase 8239, amplit 855, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:37 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 49, acDoneStatus 1, delay 2270, phase -28411, amplit 849, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:38 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 50, acDoneStatus 1, delay -1413, phase -23317, amplit 827, chanSCdB 583, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:39 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 51, acDoneStatus 1, delay -1730, phase 11076, amplit 843, chanSCdB 585, disturb 11, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:40 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 52, acDoneStatus 1, delay 1983, phase 11787, amplit 826, chanSCdB 583, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:41 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 53, acDoneStatus 1, delay 1972, phase -10839, amplit 831, chanSCdB 584, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:42 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 54, acDoneStatus 1, delay -1626, phase 15434, amplit 836, chanSCdB 584, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:43 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 55, acDoneStatus 1, delay -2028, phase -17781, amplit 862, chanSCdB 587, disturb 10, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:44 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 56, acDoneStatus 1, delay 1535, phase 1215, amplit 849, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:45 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 57, acDoneStatus 1, delay 2239, phase -22936, amplit 854, chanSCdB 586, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:46 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 58, acDoneStatus 1, delay -1618, phase 13172, amplit 847, chanSCdB 585, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:47 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 59, acDoneStatus 1, delay -2702, phase -10538, amplit 843, chanSCdB 585, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:48 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 60, acDoneStatus 1, delay 1764, phase -10599, amplit 837, chanSCdB 584, disturb 7, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:49 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 61, acDoneStatus 1, delay 1835, phase -26796, amplit 856, chanSCdB 586, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:50 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 62, acDoneStatus 1, delay -1695, phase -28594, amplit 853, chanSCdB 586, disturb 8, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:51 2019: AC Log(0): [DBG]: AC output: CarrierId 0, UL, Port 63, acDoneStatus 1, delay 3317, phase 15946, amplit 835, chanSCdB 584, disturb 6, noShift 1, agcFct 0.
+
+Fri Mar 22 14:37:51 2019: AC Log(0): [Info]: AcDispatcher Carrier0 All Port DL&UL AC Done.
+Fri Mar 22 14:37:51 2019: AC Log(0): [DBG]: AcDispatcher detectDelayFault carrier0.
+Fri Mar 22 14:37:51 2019: AC Log(0): [DBG]: AcDispatcher detectAmpliFault carrier0.
+Fri Mar 22 14:38:48 2019: AC Log(0): [DBG]: ReportAcFactor: chanSCdBAvg 674, dBSum 86317.
+Fri Mar 22 14:38:48 2019: AC Log(0): [Info]: AC Type: Period-AC
+Fri Mar 22 14:38:48 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 0, phaseCali -1.651211(degree)
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 0, gainComp = 0.990688, gainCompDbg = 0.990688
+Fri Mar 22 14:38:49 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 0, direct 0: Delay -639, Phase 2403224, Amp 32463. 
+
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 1, phaseCali 0.348301(degree)
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 1, gainComp = 1.013384, gainCompDbg = 1.013384
+Fri Mar 22 14:38:49 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 1, direct 0: Delay -458, Phase 325272, Amp 33207. 
+
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 2, phaseCali -1.651211(degree)
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 2, gainComp = 0.990153, gainCompDbg = 0.990153
+Fri Mar 22 14:38:49 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 2, direct 0: Delay -509, Phase 2215320, Amp 32445. 
+
+Fri Mar 22 14:38:49 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 3, phaseCali 0.348301(degree)
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 3, gainComp = 1.011621, gainCompDbg = 1.011621
+Fri Mar 22 14:38:50 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 3, direct 0: Delay -344, Phase 2995608, Amp 33149. 
+
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 4, phaseCali 2.347813(degree)
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 4, gainComp = 1.032492, gainCompDbg = 1.032492
+Fri Mar 22 14:38:50 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 4, direct 0: Delay 144, Phase 9816216, Amp 33833. 
+
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 5, phaseCali 4.847202(degree)
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 5, gainComp = 1.016855, gainCompDbg = 1.016855
+Fri Mar 22 14:38:50 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 5, direct 0: Delay 379, Phase 6133912, Amp 33320. 
+
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 6, phaseCali 4.847202(degree)
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 6, gainComp = 1.033609, gainCompDbg = 1.033609
+Fri Mar 22 14:38:50 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 6, direct 0: Delay 166, Phase 8522904, Amp 33869. 
+
+Fri Mar 22 14:38:50 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 7, phaseCali 5.374546(degree)
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 7, gainComp = 1.022216, gainCompDbg = 1.022216
+Fri Mar 22 14:38:51 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 7, direct 0: Delay 207, Phase 11329944, Amp 33496. 
+
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 8, phaseCali 12.378330(degree)
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 8, gainComp = 1.043816, gainCompDbg = 1.043816
+Fri Mar 22 14:38:51 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 8, direct 0: Delay 222, Phase 12026776, Amp 34204. 
+
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 9, phaseCali 5.846958(degree)
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 9, gainComp = 1.040158, gainCompDbg = 1.040158
+Fri Mar 22 14:38:51 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 9, direct 0: Delay 159, Phase 12028056, Amp 34084. 
+
+Fri Mar 22 14:38:51 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 10, phaseCali 7.346592(degree)
+Fri Mar 22 14:38:52 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 10, gainComp = 1.020658, gainCompDbg = 1.020658
+Fri Mar 22 14:38:52 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 10, direct 0: Delay 279, Phase 6855064, Amp 33445. 
+
+Fri Mar 22 14:38:52 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 11, phaseCali 8.346348(degree)
+Fri Mar 22 14:38:52 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 11, gainComp = 1.035205, gainCompDbg = 1.035205
+Fri Mar 22 14:38:52 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 11, direct 0: Delay 257, Phase 9781912, Amp 33922. 
+
+Fri Mar 22 14:38:52 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 12, phaseCali 11.345615(degree)
+Fri Mar 22 14:38:53 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 12, gainComp = 1.035490, gainCompDbg = 1.035490
+Fri Mar 22 14:38:53 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 12, direct 0: Delay 311, Phase 11282584, Amp 33931. 
+
+Fri Mar 22 14:38:53 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 13, phaseCali 10.345860(degree)
+Fri Mar 22 14:38:53 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 13, gainComp = 1.041977, gainCompDbg = 1.041977
+Fri Mar 22 14:38:53 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 13, direct 0: Delay 190, Phase 7501720, Amp 34143. 
+
+Fri Mar 22 14:38:53 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 14, phaseCali 9.346104(degree)
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 14, gainComp = 1.038584, gainCompDbg = 1.038584
+Fri Mar 22 14:38:54 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 14, direct 0: Delay 370, Phase 2793368, Amp 34032. 
+
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 15, phaseCali 11.362095(degree)
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 15, gainComp = 1.028501, gainCompDbg = 1.028501
+Fri Mar 22 14:38:54 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 15, direct 0: Delay 147, Phase 5904280, Amp 33702. 
+
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 16, phaseCali 1.348057(degree)
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 16, gainComp = 1.027916, gainCompDbg = 1.027916
+Fri Mar 22 14:38:54 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 16, direct 0: Delay 86, Phase 3374232, Amp 33683. 
+
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 17, phaseCali 1.348057(degree)
+Fri Mar 22 14:38:54 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 17, gainComp = 1.066709, gainCompDbg = 1.066709
+Fri Mar 22 14:38:55 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 17, direct 0: Delay 313, Phase 15147416, Amp 34954. 
+
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 18, phaseCali 5.879917(degree)
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 18, gainComp = 1.026057, gainCompDbg = 1.026057
+Fri Mar 22 14:38:55 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 18, direct 0: Delay 196, Phase 3976600, Amp 33622. 
+
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 19, phaseCali 6.879673(degree)
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 19, gainComp = 1.042446, gainCompDbg = 1.042446
+Fri Mar 22 14:38:55 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 19, direct 0: Delay 517, Phase 7418008, Amp 34159. 
+
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 20, phaseCali 6.879673(degree)
+Fri Mar 22 14:38:55 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 20, gainComp = 1.020177, gainCompDbg = 1.020177
+Fri Mar 22 14:38:56 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 20, direct 0: Delay -495, Phase 16547480, Amp 33429. 
+
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 21, phaseCali 6.879673(degree)
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 21, gainComp = 1.034889, gainCompDbg = 1.034889
+Fri Mar 22 14:38:56 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 21, direct 0: Delay -338, Phase 15319704, Amp 33911. 
+
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 22, phaseCali 7.379551(degree)
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 22, gainComp = 1.000317, gainCompDbg = 1.000317
+Fri Mar 22 14:38:56 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 22, direct 0: Delay -316, Phase 4191896, Amp 32778. 
+
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 23, phaseCali 6.879673(degree)
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 23, gainComp = 1.003154, gainCompDbg = 1.003154
+Fri Mar 22 14:38:56 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 23, direct 0: Delay -310, Phase 3651480, Amp 32871. 
+
+Fri Mar 22 14:38:56 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 24, phaseCali 10.878696(degree)
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 24, gainComp = 0.976258, gainCompDbg = 0.976258
+Fri Mar 22 14:38:57 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 24, direct 0: Delay 55, Phase 4767128, Amp 31990. 
+
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 25, phaseCali 9.878941(degree)
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 25, gainComp = 1.004034, gainCompDbg = 1.004034
+Fri Mar 22 14:38:57 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 25, direct 0: Delay 30, Phase 5544856, Amp 32900. 
+
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 26, phaseCali 8.379307(degree)
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 26, gainComp = 0.992060, gainCompDbg = 0.992060
+Fri Mar 22 14:38:57 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 26, direct 0: Delay 56, Phase 1063576, Amp 32508. 
+
+Fri Mar 22 14:38:57 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 27, phaseCali 6.346836(degree)
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 27, gainComp = 0.998523, gainCompDbg = 0.998523
+Fri Mar 22 14:38:58 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 27, direct 0: Delay 70, Phase 4532376, Amp 32720. 
+
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 28, phaseCali 8.879185(degree)
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 28, gainComp = 0.996213, gainCompDbg = 0.996213
+Fri Mar 22 14:38:58 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 28, direct 0: Delay 862, Phase 11970200, Amp 32644. 
+
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 29, phaseCali 2.847691(degree)
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 29, gainComp = 0.987369, gainCompDbg = 0.987369
+Fri Mar 22 14:38:58 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 29, direct 0: Delay 891, Phase 12306584, Amp 32354. 
+
+Fri Mar 22 14:38:58 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 30, phaseCali 6.346836(degree)
+Fri Mar 22 14:38:59 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 30, gainComp = 0.990016, gainCompDbg = 0.990016
+Fri Mar 22 14:38:59 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 30, direct 0: Delay 712, Phase 10504344, Amp 32441. 
+
+Fri Mar 22 14:38:59 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 31, phaseCali 7.879429(degree)
+Fri Mar 22 14:38:59 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 31, gainComp = 0.981558, gainCompDbg = 0.981558
+Fri Mar 22 14:38:59 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 31, direct 0: Delay 661, Phase 13953944, Amp 32164. 
+
+Fri Mar 22 14:38:59 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 0, direct 0.
+Fri Mar 22 14:39:00 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 0, direct 0.
+Fri Mar 22 14:39:00 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 0, phaseCali -1.651211(degree)
+Fri Mar 22 14:39:00 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 0, gainComp = 0.978515, gainCompDbg = 0.978515
+Fri Mar 22 14:39:00 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 0, direct 1: Delay -16, Phase 4976536, Amp 32064. 
+
+Fri Mar 22 14:39:00 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 1, phaseCali 0.348301(degree)
+Fri Mar 22 14:39:00 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 1, gainComp = 0.977929, gainCompDbg = 0.977929
+Fri Mar 22 14:39:00 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 1, direct 1: Delay 134, Phase 11143832, Amp 32045. 
+
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 2, phaseCali -1.651211(degree)
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 2, gainComp = 0.996590, gainCompDbg = 0.996590
+Fri Mar 22 14:39:01 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 2, direct 1: Delay -511, Phase 11142296, Amp 32656. 
+
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 3, phaseCali 0.348301(degree)
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 3, gainComp = 0.990973, gainCompDbg = 0.990973
+Fri Mar 22 14:39:01 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 3, direct 1: Delay -556, Phase 482968, Amp 32472. 
+
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 4, phaseCali 2.347813(degree)
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 4, gainComp = 0.998426, gainCompDbg = 0.998426
+Fri Mar 22 14:39:01 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 4, direct 1: Delay 98, Phase 15413144, Amp 32716. 
+
+Fri Mar 22 14:39:01 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 5, phaseCali 4.847202(degree)
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 5, gainComp = 0.996462, gainCompDbg = 0.996462
+Fri Mar 22 14:39:02 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 5, direct 1: Delay 385, Phase 4442264, Amp 32652. 
+
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 6, phaseCali 4.847202(degree)
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 6, gainComp = 1.002912, gainCompDbg = 1.002912
+Fri Mar 22 14:39:02 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 6, direct 1: Delay -497, Phase 4096408, Amp 32863. 
+
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 7, phaseCali 5.374546(degree)
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 7, gainComp = 0.999213, gainCompDbg = 0.999213
+Fri Mar 22 14:39:02 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 7, direct 1: Delay -633, Phase 8897432, Amp 32742. 
+
+Fri Mar 22 14:39:02 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 8, phaseCali 12.378330(degree)
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 8, gainComp = 1.010186, gainCompDbg = 1.010186
+Fri Mar 22 14:39:03 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 8, direct 1: Delay -136, Phase 10772632, Amp 33102. 
+
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 9, phaseCali 5.846958(degree)
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 9, gainComp = 1.003864, gainCompDbg = 1.003864
+Fri Mar 22 14:39:03 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 9, direct 1: Delay 200, Phase 645784, Amp 32895. 
+
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 10, phaseCali 7.346592(degree)
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 10, gainComp = 1.000933, gainCompDbg = 1.000933
+Fri Mar 22 14:39:03 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 10, direct 1: Delay -494, Phase 12871576, Amp 32799. 
+
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 11, phaseCali 8.346348(degree)
+Fri Mar 22 14:39:03 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 11, gainComp = 1.006910, gainCompDbg = 1.006910
+Fri Mar 22 14:39:03 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 11, direct 1: Delay -611, Phase 2466456, Amp 32994. 
+
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 12, phaseCali 11.345615(degree)
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 12, gainComp = 0.998014, gainCompDbg = 0.998014
+Fri Mar 22 14:39:04 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 12, direct 1: Delay -45, Phase 14974872, Amp 32703. 
+
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 13, phaseCali 10.345860(degree)
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 13, gainComp = 1.004031, gainCompDbg = 1.004031
+Fri Mar 22 14:39:04 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 13, direct 1: Delay 187, Phase 9151896, Amp 32900. 
+
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 14, phaseCali 9.346104(degree)
+Fri Mar 22 14:39:04 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 14, gainComp = 0.998977, gainCompDbg = 0.998977
+Fri Mar 22 14:39:05 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 14, direct 1: Delay -352, Phase 14397336, Amp 32734. 
+
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 15, phaseCali 11.362095(degree)
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 15, gainComp = 0.973006, gainCompDbg = 0.973006
+Fri Mar 22 14:39:05 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 15, direct 1: Delay -637, Phase 5151384, Amp 31883. 
+
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 16, phaseCali 1.348057(degree)
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 16, gainComp = 0.975296, gainCompDbg = 0.975296
+Fri Mar 22 14:39:05 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 16, direct 1: Delay -86, Phase 2913176, Amp 31959. 
+
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 17, phaseCali 1.348057(degree)
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 17, gainComp = 1.025881, gainCompDbg = 1.025881
+Fri Mar 22 14:39:05 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 17, direct 1: Delay 282, Phase 8759448, Amp 33616. 
+
+Fri Mar 22 14:39:05 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 18, phaseCali 5.879917(degree)
+Fri Mar 22 14:39:06 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 18, gainComp = 1.006887, gainCompDbg = 1.006887
+Fri Mar 22 14:39:06 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 18, direct 1: Delay 862, Phase 7116440, Amp 32994. 
+
+Fri Mar 22 14:39:06 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 19, phaseCali 6.879673(degree)
+Fri Mar 22 14:39:06 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 19, gainComp = 0.996298, gainCompDbg = 0.996298
+Fri Mar 22 14:39:06 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 19, direct 1: Delay 804, Phase 15841432, Amp 32647. 
+
+Fri Mar 22 14:39:06 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 20, phaseCali 6.879673(degree)
+Fri Mar 22 14:39:07 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 20, gainComp = 1.000903, gainCompDbg = 1.000903
+Fri Mar 22 14:39:07 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 20, direct 1: Delay -73, Phase 145816, Amp 32798. 
+
+Fri Mar 22 14:39:07 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 21, phaseCali 6.879673(degree)
+Fri Mar 22 14:39:07 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 21, gainComp = 1.017441, gainCompDbg = 1.017441
+Fri Mar 22 14:39:07 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 21, direct 1: Delay 57, Phase 11033240, Amp 33340. 
+
+Fri Mar 22 14:39:07 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 22, phaseCali 7.379551(degree)
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 22, gainComp = 1.003298, gainCompDbg = 1.003298
+Fri Mar 22 14:39:08 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 22, direct 1: Delay 777, Phase 5405592, Amp 32876. 
+
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 23, phaseCali 6.879673(degree)
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 23, gainComp = 1.002690, gainCompDbg = 1.002690
+Fri Mar 22 14:39:08 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 23, direct 1: Delay 607, Phase 14166168, Amp 32856. 
+
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 24, phaseCali 10.878696(degree)
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 24, gainComp = 0.972710, gainCompDbg = 0.972710
+Fri Mar 22 14:39:08 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 24, direct 1: Delay -178, Phase 5069976, Amp 31874. 
+
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 25, phaseCali 9.878941(degree)
+Fri Mar 22 14:39:08 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 25, gainComp = 1.003816, gainCompDbg = 1.003816
+Fri Mar 22 14:39:09 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 25, direct 1: Delay 62, Phase 16538008, Amp 32893. 
+
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 26, phaseCali 8.379307(degree)
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 26, gainComp = 0.999839, gainCompDbg = 0.999839
+Fri Mar 22 14:39:09 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 26, direct 1: Delay 826, Phase 14353560, Amp 32763. 
+
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 27, phaseCali 6.346836(degree)
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 27, gainComp = 1.001977, gainCompDbg = 1.001977
+Fri Mar 22 14:39:09 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 27, direct 1: Delay 585, Phase 9091224, Amp 32833. 
+
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 28, phaseCali 8.879185(degree)
+Fri Mar 22 14:39:09 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 28, gainComp = 0.997160, gainCompDbg = 0.997160
+Fri Mar 22 14:39:10 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 28, direct 1: Delay -48, Phase 7645080, Amp 32675. 
+
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 29, phaseCali 2.847691(degree)
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 29, gainComp = 1.013247, gainCompDbg = 1.013247
+Fri Mar 22 14:39:10 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 29, direct 1: Delay 165, Phase 2769048, Amp 33202. 
+
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 30, phaseCali 6.346836(degree)
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 30, gainComp = 1.005468, gainCompDbg = 1.005468
+Fri Mar 22 14:39:10 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 30, direct 1: Delay 724, Phase 11858840, Amp 32947. 
+
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 31, phaseCali 7.879429(degree)
+Fri Mar 22 14:39:10 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 31, gainComp = 0.980284, gainCompDbg = 0.980284
+Fri Mar 22 14:39:11 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 0 for carrier 0, port 31, direct 1: Delay 579, Phase 6482840, Amp 32122. 
+
+Fri Mar 22 14:39:11 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 0, direct 1.
+Fri Mar 22 14:39:11 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 0, direct 1.
+Fri Mar 22 14:39:11 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 32, phaseCali -5.282192(degree)
+Fri Mar 22 14:39:11 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 32, gainComp = 0.984405, gainCompDbg = 0.984405
+Fri Mar 22 14:39:11 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 32, direct 0: Delay -1138, Phase 16616088, Amp 32257. 
+
+Fri Mar 22 14:39:11 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 33, phaseCali -11.786098(degree)
+Fri Mar 22 14:39:11 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 33, gainComp = 0.993121, gainCompDbg = 0.993121
+Fri Mar 22 14:39:12 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 33, direct 0: Delay -1013, Phase 14705816, Amp 32543. 
+
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 34, phaseCali -9.984341(degree)
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 34, gainComp = 0.979851, gainCompDbg = 0.979851
+Fri Mar 22 14:39:12 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 34, direct 0: Delay -1147, Phase 16487064, Amp 32108. 
+
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 35, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 35, gainComp = 0.993994, gainCompDbg = 0.993994
+Fri Mar 22 14:39:12 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 35, direct 0: Delay -1103, Phase 99480, Amp 32571. 
+
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 36, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:12 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 36, gainComp = 0.956023, gainCompDbg = 0.956023
+Fri Mar 22 14:39:13 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 36, direct 0: Delay 197, Phase 4190872, Amp 31327. 
+
+Fri Mar 22 14:39:13 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 37, phaseCali -6.485195(degree)
+Fri Mar 22 14:39:13 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 37, gainComp = 0.984009, gainCompDbg = 0.984009
+Fri Mar 22 14:39:13 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 37, direct 0: Delay 6, Phase 3292824, Amp 32244. 
+
+Fri Mar 22 14:39:13 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 38, phaseCali -11.483974(degree)
+Fri Mar 22 14:39:13 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 38, gainComp = 1.003311, gainCompDbg = 1.003311
+Fri Mar 22 14:39:14 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 38, direct 0: Delay 547, Phase 4438680, Amp 32876. 
+
+Fri Mar 22 14:39:14 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 39, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:14 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 39, gainComp = 0.997077, gainCompDbg = 0.997077
+Fri Mar 22 14:39:14 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 39, direct 0: Delay 94, Phase 7324312, Amp 32672. 
+
+Fri Mar 22 14:39:14 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 40, phaseCali -5.067959(degree)
+Fri Mar 22 14:39:14 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 40, gainComp = 1.009837, gainCompDbg = 1.009837
+Fri Mar 22 14:39:15 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 40, direct 0: Delay -1127, Phase 5802648, Amp 33090. 
+
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 41, phaseCali -10.280972(degree)
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 41, gainComp = 1.016592, gainCompDbg = 1.016592
+Fri Mar 22 14:39:15 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 41, direct 0: Delay -1038, Phase 6603416, Amp 33312. 
+
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 42, phaseCali -4.068203(degree)
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 42, gainComp = 0.990658, gainCompDbg = 0.990658
+Fri Mar 22 14:39:15 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 42, direct 0: Delay 713, Phase 3062936, Amp 32462. 
+
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 43, phaseCali -7.281704(degree)
+Fri Mar 22 14:39:15 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 43, gainComp = 1.002655, gainCompDbg = 1.002655
+Fri Mar 22 14:39:15 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 43, direct 0: Delay -1137, Phase 5020312, Amp 32855. 
+
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 44, phaseCali -6.386318(degree)
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 44, gainComp = 1.037854, gainCompDbg = 1.037854
+Fri Mar 22 14:39:16 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 44, direct 0: Delay -368, Phase 11122584, Amp 34008. 
+
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 45, phaseCali -3.689175(degree)
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 45, gainComp = 1.003670, gainCompDbg = 1.003670
+Fri Mar 22 14:39:16 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 45, direct 0: Delay -580, Phase 7422872, Amp 32888. 
+
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 46, phaseCali -3.689175(degree)
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 46, gainComp = 1.016253, gainCompDbg = 1.016253
+Fri Mar 22 14:39:16 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 46, direct 0: Delay -464, Phase 2571928, Amp 33301. 
+
+Fri Mar 22 14:39:16 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 47, phaseCali -7.287197(degree)
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 47, gainComp = 1.024241, gainCompDbg = 1.024241
+Fri Mar 22 14:39:17 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 47, direct 0: Delay -528, Phase 5475992, Amp 33562. 
+
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 48, phaseCali -9.281216(degree)
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 48, gainComp = 0.989338, gainCompDbg = 0.989338
+Fri Mar 22 14:39:17 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 48, direct 0: Delay 704, Phase 9119384, Amp 32419. 
+
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 49, phaseCali -5.985317(degree)
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 49, gainComp = 1.010981, gainCompDbg = 1.010981
+Fri Mar 22 14:39:17 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 49, direct 0: Delay 710, Phase 4614296, Amp 33128. 
+
+Fri Mar 22 14:39:17 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 50, phaseCali -5.485439(degree)
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 50, gainComp = 0.989058, gainCompDbg = 0.989058
+Fri Mar 22 14:39:18 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 50, direct 0: Delay 924, Phase 9629336, Amp 32409. 
+
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 51, phaseCali -4.985561(degree)
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 51, gainComp = 0.979851, gainCompDbg = 0.979851
+Fri Mar 22 14:39:18 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 51, direct 0: Delay -849, Phase 11733144, Amp 32108. 
+
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 52, phaseCali -2.568569(degree)
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 52, gainComp = 0.986085, gainCompDbg = 0.986085
+Fri Mar 22 14:39:18 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 52, direct 0: Delay -657, Phase 12350616, Amp 32312. 
+
+Fri Mar 22 14:39:18 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 53, phaseCali -1.568813(degree)
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 53, gainComp = 0.988479, gainCompDbg = 0.988479
+Fri Mar 22 14:39:19 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 53, direct 0: Delay -714, Phase 11626136, Amp 32390. 
+
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 54, phaseCali -6.781826(degree)
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 54, gainComp = 0.971390, gainCompDbg = 0.971390
+Fri Mar 22 14:39:19 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 54, direct 0: Delay -572, Phase 15794584, Amp 31830. 
+
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 55, phaseCali -4.485683(degree)
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 55, gainComp = 0.960912, gainCompDbg = 0.960912
+Fri Mar 22 14:39:19 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 55, direct 0: Delay -531, Phase 15323544, Amp 31487. 
+
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 56, phaseCali -5.985317(degree)
+Fri Mar 22 14:39:19 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 56, gainComp = 0.960139, gainCompDbg = 0.960139
+Fri Mar 22 14:39:20 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 56, direct 0: Delay -702, Phase 1262232, Amp 31462. 
+
+Fri Mar 22 14:39:20 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 57, phaseCali -5.485439(degree)
+Fri Mar 22 14:39:20 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 57, gainComp = 0.978412, gainCompDbg = 0.978412
+Fri Mar 22 14:39:20 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 57, direct 0: Delay -826, Phase 1551768, Amp 32061. 
+
+Fri Mar 22 14:39:20 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 58, phaseCali -8.281460(degree)
+Fri Mar 22 14:39:20 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 58, gainComp = 0.937954, gainCompDbg = 0.937954
+Fri Mar 22 14:39:20 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 58, direct 0: Delay -498, Phase 13604760, Amp 30735. 
+
+Fri Mar 22 14:39:20 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 59, phaseCali -3.288174(degree)
+Fri Mar 22 14:39:21 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 59, gainComp = 0.948233, gainCompDbg = 0.948233
+Fri Mar 22 14:39:21 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 59, direct 0: Delay -778, Phase 16322968, Amp 31072. 
+
+Fri Mar 22 14:39:21 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 60, phaseCali -2.491665(degree)
+Fri Mar 22 14:39:21 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 60, gainComp = 0.961952, gainCompDbg = 0.961952
+Fri Mar 22 14:39:21 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 60, direct 0: Delay 57, Phase 5781144, Amp 31521. 
+
+Fri Mar 22 14:39:21 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 61, phaseCali -1.574306(degree)
+Fri Mar 22 14:39:22 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 61, gainComp = 0.967864, gainCompDbg = 0.967864
+Fri Mar 22 14:39:22 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 61, direct 0: Delay -67, Phase 5974936, Amp 31715. 
+
+Fri Mar 22 14:39:22 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 62, phaseCali -7.281704(degree)
+Fri Mar 22 14:39:22 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 62, gainComp = 0.951285, gainCompDbg = 0.951285
+Fri Mar 22 14:39:22 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 62, direct 0: Delay 151, Phase 5415832, Amp 31172. 
+
+Fri Mar 22 14:39:22 2019: AC Log(0): [DBG]: debug calibration network: direct 0, port 63, phaseCali -5.282192(degree)
+Fri Mar 22 14:39:23 2019: AC Log(0): [DBG]: AC amplit debug: direct:0, port: 63, gainComp = 0.955258, gainCompDbg = 0.955258
+Fri Mar 22 14:39:23 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 63, direct 0: Delay -139, Phase 7592856, Amp 31302. 
+
+Fri Mar 22 14:39:23 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 1, direct 0.
+Fri Mar 22 14:39:23 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 1, direct 0.
+Fri Mar 22 14:39:23 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 32, phaseCali -5.282192(degree)
+Fri Mar 22 14:39:23 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 32, gainComp = 0.986685, gainCompDbg = 0.986685
+Fri Mar 22 14:39:23 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 32, direct 1: Delay 774, Phase 7835032, Amp 32332. 
+
+Fri Mar 22 14:39:23 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 33, phaseCali -11.786098(degree)
+Fri Mar 22 14:39:24 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 33, gainComp = 0.975442, gainCompDbg = 0.975442
+Fri Mar 22 14:39:24 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 33, direct 1: Delay 1059, Phase 13730968, Amp 31963. 
+
+Fri Mar 22 14:39:24 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 34, phaseCali -9.984341(degree)
+Fri Mar 22 14:39:24 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 34, gainComp = 0.990398, gainCompDbg = 0.990398
+Fri Mar 22 14:39:24 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 34, direct 1: Delay 258, Phase 13027992, Amp 32453. 
+
+Fri Mar 22 14:39:24 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 35, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:24 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 35, gainComp = 0.998845, gainCompDbg = 0.998845
+Fri Mar 22 14:39:25 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 35, direct 1: Delay 162, Phase 2164120, Amp 32730. 
+
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 36, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 36, gainComp = 0.987109, gainCompDbg = 0.987109
+Fri Mar 22 14:39:25 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 36, direct 1: Delay 766, Phase 8270744, Amp 32346. 
+
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 37, phaseCali -6.485195(degree)
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 37, gainComp = 0.993442, gainCompDbg = 0.993442
+Fri Mar 22 14:39:25 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 37, direct 1: Delay 653, Phase 15714712, Amp 32553. 
+
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 38, phaseCali -11.483974(degree)
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 38, gainComp = 1.037332, gainCompDbg = 1.037332
+Fri Mar 22 14:39:25 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 38, direct 1: Delay 605, Phase 13770648, Amp 33991. 
+
+Fri Mar 22 14:39:25 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 39, phaseCali -7.484951(degree)
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 39, gainComp = 0.994183, gainCompDbg = 0.994183
+Fri Mar 22 14:39:26 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 39, direct 1: Delay -155, Phase 2808472, Amp 32577. 
+
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 40, phaseCali -5.067959(degree)
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 40, gainComp = 0.984398, gainCompDbg = 0.984398
+Fri Mar 22 14:39:26 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 40, direct 1: Delay 678, Phase 56216, Amp 32257. 
+
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 41, phaseCali -10.280972(degree)
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 41, gainComp = 1.003864, gainCompDbg = 1.003864
+Fri Mar 22 14:39:26 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 41, direct 1: Delay -892, Phase 5928344, Amp 32895. 
+
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 42, phaseCali -4.068203(degree)
+Fri Mar 22 14:39:26 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 42, gainComp = 1.006523, gainCompDbg = 1.006523
+Fri Mar 22 14:39:26 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 42, direct 1: Delay 85, Phase 16324248, Amp 32982. 
+
+Fri Mar 22 14:39:27 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 43, phaseCali -7.281704(degree)
+Fri Mar 22 14:39:27 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 43, gainComp = 0.990246, gainCompDbg = 0.990246
+Fri Mar 22 14:39:27 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 43, direct 1: Delay 241, Phase 5355160, Amp 32448. 
+
+Fri Mar 22 14:39:27 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 44, phaseCali -6.386318(degree)
+Fri Mar 22 14:39:27 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 44, gainComp = 1.026135, gainCompDbg = 1.026135
+Fri Mar 22 14:39:27 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 44, direct 1: Delay 699, Phase 4968088, Amp 33624. 
+
+Fri Mar 22 14:39:27 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 45, phaseCali -3.689175(degree)
+Fri Mar 22 14:39:28 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 45, gainComp = 1.005449, gainCompDbg = 1.005449
+Fri Mar 22 14:39:28 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 45, direct 1: Delay 894, Phase 15743384, Amp 32947. 
+
+Fri Mar 22 14:39:28 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 46, phaseCali -3.689175(degree)
+Fri Mar 22 14:39:28 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 46, gainComp = 1.001457, gainCompDbg = 1.001457
+Fri Mar 22 14:39:28 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 46, direct 1: Delay 291, Phase 4148888, Amp 32816. 
+
+Fri Mar 22 14:39:28 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 47, phaseCali -7.287197(degree)
+Fri Mar 22 14:39:28 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 47, gainComp = 0.975459, gainCompDbg = 0.975459
+Fri Mar 22 14:39:29 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 47, direct 1: Delay 79, Phase 11154584, Amp 31964. 
+
+Fri Mar 22 14:39:29 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 48, phaseCali -9.281216(degree)
+Fri Mar 22 14:39:29 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 48, gainComp = 0.987547, gainCompDbg = 0.987547
+Fri Mar 22 14:39:29 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 48, direct 1: Delay 573, Phase 2541720, Amp 32360. 
+
+Fri Mar 22 14:39:29 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 49, phaseCali -5.985317(degree)
+Fri Mar 22 14:39:29 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 49, gainComp = 0.997977, gainCompDbg = 0.997977
+Fri Mar 22 14:39:30 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 49, direct 1: Delay 714, Phase 9782936, Amp 32702. 
+
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 50, phaseCali -5.485439(degree)
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 50, gainComp = 1.014988, gainCompDbg = 1.014988
+Fri Mar 22 14:39:30 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 50, direct 1: Delay -444, Phase 11063704, Amp 33259. 
+
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 51, phaseCali -4.985561(degree)
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 51, gainComp = 1.008020, gainCompDbg = 1.008020
+Fri Mar 22 14:39:30 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 51, direct 1: Delay -544, Phase 3067800, Amp 33031. 
+
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 52, phaseCali -2.568569(degree)
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 52, gainComp = 1.019491, gainCompDbg = 1.019491
+Fri Mar 22 14:39:30 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 52, direct 1: Delay 624, Phase 3137176, Amp 33407. 
+
+Fri Mar 22 14:39:30 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 53, phaseCali -1.568813(degree)
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 53, gainComp = 1.021492, gainCompDbg = 1.021492
+Fri Mar 22 14:39:31 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 53, direct 1: Delay 620, Phase 14075544, Amp 33472. 
+
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 54, phaseCali -6.781826(degree)
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 54, gainComp = 1.013226, gainCompDbg = 1.013226
+Fri Mar 22 14:39:31 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 54, direct 1: Delay -511, Phase 4267160, Amp 33201. 
+
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 55, phaseCali -4.485683(degree)
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 55, gainComp = 1.002794, gainCompDbg = 1.002794
+Fri Mar 22 14:39:31 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 55, direct 1: Delay -638, Phase 12434328, Amp 32860. 
+
+Fri Mar 22 14:39:31 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 56, phaseCali -5.985317(degree)
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 56, gainComp = 1.005939, gainCompDbg = 1.005939
+Fri Mar 22 14:39:32 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 56, direct 1: Delay 483, Phase 589976, Amp 32963. 
+
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 57, phaseCali -5.485439(degree)
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 57, gainComp = 1.008757, gainCompDbg = 1.008757
+Fri Mar 22 14:39:32 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 57, direct 1: Delay 704, Phase 11161240, Amp 33055. 
+
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 58, phaseCali -8.281460(degree)
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 58, gainComp = 1.000865, gainCompDbg = 1.000865
+Fri Mar 22 14:39:32 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 58, direct 1: Delay -509, Phase 3757976, Amp 32796. 
+
+Fri Mar 22 14:39:32 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 59, phaseCali -3.288174(degree)
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 59, gainComp = 1.016040, gainCompDbg = 1.016040
+Fri Mar 22 14:39:33 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 59, direct 1: Delay -850, Phase 14232728, Amp 33294. 
+
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 60, phaseCali -2.491665(degree)
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 60, gainComp = 1.014977, gainCompDbg = 1.014977
+Fri Mar 22 14:39:33 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 60, direct 1: Delay 555, Phase 14179992, Amp 33259. 
+
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 61, phaseCali -1.574306(degree)
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 61, gainComp = 1.000346, gainCompDbg = 1.000346
+Fri Mar 22 14:39:33 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 61, direct 1: Delay 577, Phase 9990808, Amp 32779. 
+
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 62, phaseCali -7.281704(degree)
+Fri Mar 22 14:39:33 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 62, gainComp = 0.994354, gainCompDbg = 0.994354
+Fri Mar 22 14:39:34 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 62, direct 1: Delay -533, Phase 9796504, Amp 32583. 
+
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: debug calibration network: direct 1, port 63, phaseCali -5.282192(degree)
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: AC amplit debug: direct:1, port: 63, gainComp = 1.013360, gainCompDbg = 1.013360
+Fri Mar 22 14:39:34 2019: AC Log(0): [Info]: Send Period-AC msg to TRXM 1 for carrier 0, port 63, direct 1: Delay 1043, Phase 4328344, Amp 33206. 
+
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: ac_dispatch: sent MSG_AC_COMP_PARA_REQ to trxm 1, direct 1.
+Fri Mar 22 14:39:34 2019: AC Log(0): [Info]: Received msg MSG_AC_COMP_PARA_RSP for trxm 1, direct 1.
+Fri Mar 22 14:39:34 2019: AC Log(0): [Info]: ------Period-AC msg handling is done------
+
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: ------Period-AC msg handling result:------
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: CarrierId 0, port 0, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: CarrierId 0, port 0, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:34 2019: AC Log(0): [DBG]: CarrierId 0, port 1, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 1, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 2, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 2, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 3, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 3, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 4, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 4, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 5, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 5, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 6, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 6, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 7, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 7, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 8, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 8, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 9, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 9, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 10, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 10, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 11, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 11, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 12, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 12, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 13, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 13, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 14, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 14, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 15, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 15, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 16, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 16, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 17, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 17, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 18, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 18, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 19, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 19, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 20, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 20, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 21, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 21, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 22, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 22, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 23, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 23, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 24, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:35 2019: AC Log(0): [DBG]: CarrierId 0, port 24, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 25, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 25, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 26, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 26, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 27, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 27, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 28, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 28, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 29, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 29, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 30, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 30, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 31, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 31, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 32, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 32, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 33, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 33, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 34, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 34, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 35, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 35, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 36, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 36, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 37, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 37, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 38, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 38, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 39, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 39, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 40, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 40, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 41, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 41, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 42, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 42, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 43, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 43, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 44, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 44, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 45, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 45, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 46, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 46, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 47, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 47, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 48, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 48, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:36 2019: AC Log(0): [DBG]: CarrierId 0, port 49, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 49, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 50, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 50, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 51, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 51, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 52, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 52, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 53, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 53, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 54, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 54, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 55, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 55, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 56, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 56, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 57, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 57, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 58, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 58, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 59, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 59, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 60, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 60, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 61, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 61, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 62, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 62, direct 1 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 63, direct 0 status: send 1, recv 1.
+Fri Mar 22 14:39:37 2019: AC Log(0): [DBG]: CarrierId 0, port 63, direct 1 status: send 1, recv 1.
