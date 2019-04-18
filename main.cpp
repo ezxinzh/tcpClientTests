@@ -56,6 +56,16 @@ int main(int argc, char *argv[])
     pthread_t threadIds[threadNums] = {0};
     std::vector<guohui::tcpClient*> client_v;
     string buf = DEFAULT_ADDR;
+
+    string buf1 = LOG_LOCATION;
+    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf, buf1);
+    newThread(threadIds[0], &guohui::tcpClientFunc, client1);
+//    client1->condWait();
+//    printf("======file[%s] fun[%s] line[%d] connection established.\n", \
+//            __FILE__, __FUNCTION__, __LINE__);
+    /*==========================log seng==========================*/
+#if 0
+>>>>>>> 4ca062a906a439584e6c7c0625bfb0d2f8f6e7f1
     string buf1 = LOG_LOCATION;
 
     for(int i=0; i<threadNums; i++)
