@@ -28,7 +28,7 @@ namespace guohui
 {
 enum connStatus_t
 {
-    CONNECTING = 0,
+    CONNECTING = 0,     //failed
     CONNECTED
 };
 class tcpClient:public createThread

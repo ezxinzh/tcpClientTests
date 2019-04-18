@@ -42,12 +42,14 @@ bool tcpClient::buildConnect()
     if( connfd_ < 0)
     {
         printf("======tid[%lu] socket error\n", this->tid());
+        this->connStatus_ = CONNECTING;
         return false;
     }
 
     if(connect(connfd_, (struct sockaddr*)&serverAddr_, sizeof(serverAddr_)) < 0)
     {
         printf("======tid[%lu] connect failed\n", this->tid());
+        this->connStatus_ = CONNECTING;
         return false;
     }
     else
@@ -69,6 +71,13 @@ bool tcpClient::buildConnect()
 
 void tcpClient::handle_connection()
 {
+    if(this->connStatus_ != CONNECTED)
+    {
+        printf("======tid[%lu] file[%s] func[%s] line[%d] connect server:%s failed!\n", \
+                        this->tid(), __FILE__, __FUNCTION__, __LINE__, inet_ntoa(serverAddr_.sin_addr));
+        return;
+    }
+
     char sendline[MAXLINE] = {0};
     char recvline[MAXLINE] = {0};
 //    int maxfdp, stdineof;
