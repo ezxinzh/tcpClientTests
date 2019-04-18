@@ -55,7 +55,6 @@ int main(int argc, char *argv[])
     pthread_t threadIds[threadNums] = {0};
     std::vector<guohui::tcpClient*> client_v;
     string buf = DEFAULT_ADDR;
-
     string buf1 = LOG_LOCATION;
 
     for(int i=0; i<threadNums; i++)
