@@ -61,12 +61,21 @@ int main( int argc, char *argv[])
     string buf = DEFAULT_ADDR;
     guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf);
     newThread(threadIds[0], &guohui::tcpClientFunc, client1);
+<<<<<<< HEAD
     client1->condWait();
     printf("======fun[%s] line[%d] connection established.\n", __FUNCTION__, __LINE__);
+=======
+    usleep(100000);
+
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     /*==========================log seng==========================*/
 #if 1
     string buf1 = LOG_LOCATION;
     guohui::logHandle* logHand_1 = new guohui::logHandle(buf1);
+<<<<<<< HEAD
+=======
+    printf("======fun:%s line:%d do here\n", __FUNCTION__, __LINE__);
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     if(client1->getConnfd() > 0)
     {
         logHand_1->setSockfd(client1->getConnfd());

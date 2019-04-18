@@ -17,10 +17,14 @@ namespace guohui
 {
 tcpClient::tcpClient(int port, string addr):
         serverPort_(port),
+<<<<<<< HEAD
         connfd_(0),
         mutex_(PTHREAD_MUTEX_INITIALIZER),
         cond_(PTHREAD_COND_INITIALIZER),
         connStatus_(CONNECTING)
+=======
+        connfd_(0)
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
 {
     strcpy(addr_, addr.c_str());
 //    printf("======port:%d addr:%s\n", serverPort_, addr_);
@@ -49,12 +53,15 @@ bool tcpClient::buildConnect()
         write(connfd_, "hello server, i am client.\n", strlen("hello server, i am client.\n"));
     }
     printf("======fun:%s line:%d connfd:%d\n", __FUNCTION__, __LINE__, this->getConnfd());
+<<<<<<< HEAD
 
     pthread_mutex_lock(&mutex_);
     connStatus_ = CONNECTED;
     pthread_cond_signal(&cond_);
     pthread_mutex_unlock(&mutex_);
 
+=======
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     return true;
 }
 
@@ -64,13 +71,21 @@ void tcpClient::handle_connection()
     char recvline[MAXLINE] = {0};
 //    int maxfdp, stdineof;
     struct pollfd pfds[2];
+<<<<<<< HEAD
     /* 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
+=======
+    /* ������������� */
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     int n;
     if(connfd_ < 0)
         return;
     pfds[0].fd = connfd_;
     pfds[0].events = POLLIN;
+<<<<<<< HEAD
     /* 锟斤拷颖锟阶硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
+=======
+    /* ��ӱ�׼���������� */
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     pfds[1].fd = STDIN_FILENO;
     pfds[1].events = POLLIN;
     int cnt = 0;
@@ -99,7 +114,11 @@ void tcpClient::handle_connection()
             strcat(sendline, buf);
             write(pfds[0].fd, sendline, strlen(sendline));
         }
+<<<<<<< HEAD
         /* 锟斤拷锟皆憋拷准锟斤拷锟斤拷锟角凤拷准锟斤拷锟斤拷 */
+=======
+        /* ���Ա�׼�����Ƿ�׼���� */
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
         if(pfds[1].revents & POLLIN)
         {
             n = read(STDIN_FILENO, recvline, MAXLINE);
@@ -113,6 +132,7 @@ void tcpClient::handle_connection()
     }
 }
 
+<<<<<<< HEAD
 void tcpClient::condWait()
 {
     pthread_mutex_lock(&mutex_);
@@ -124,6 +144,11 @@ void tcpClient::condWait()
 
 void *tcpClientFunc(void *arg)
 {
+=======
+void *tcpClientFunc(void *arg)
+{
+    printf("======3\n");
+>>>>>>> 8e9b9e9ff3dd12ffb94c157fbd696e8c322d135a
     guohui::tcpClient *cp = (guohui::tcpClient*)arg;
     cp->buildConnect();
     cp->handle_connection();
