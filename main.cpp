@@ -38,48 +38,42 @@ using namespace guohui;
 #define max( a, b) (a > b) ? a : b
 #define THREAD_NUMS 2
 
-static bool newThread(pthread_t pthreadId, void *_start_routine(void *), void *_arg)
+int main(int argc, char *argv[])
 {
-    if(pthread_create(&pthreadId, NULL, _start_routine, _arg))
+    if (argc < 2)
     {
-        printf("======pthread_create failed!\n");
-        return false;
+      printf("Usage:\n  %s threadnums \n", argv[0]);
+      return 0;
     }
-    return true;
-}
 
-int main( int argc, char *argv[])
-{
-    pthread_t threadIds[THREAD_NUMS] = {0};
-//    std::vector<guohui::tcpClient*> client_v;
-    for(int i=0; i<THREAD_NUMS; i++)
+    int threadNums = THREAD_NUMS;
+    if(argc > 1)
     {
-//        client_v.push_back(new(tcpClient));
+        threadNums = atoi(argv[1]);
+        printf("======file[%s] func[%s] line[%d] threadNums:%d.\n", \
+                        __FILE__, __FUNCTION__, __LINE__, threadNums);
+    }
+    pthread_t threadIds[threadNums] = {0};
+    std::vector<guohui::tcpClient*> client_v;
+    string buf = DEFAULT_ADDR;
+    string buf1 = LOG_LOCATION;
+
+    for(int i=0; i<threadNums; i++)
+    {
+        client_v.push_back(new guohui::tcpClient(32006, buf, buf1));
     }
 
     /*==========================connect server==========================*/
-    string buf = DEFAULT_ADDR;
-    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf);
-    newThread(threadIds[0], &guohui::tcpClientFunc, client1);
-    client1->condWait();
-    printf("======file[%s] fun[%s] line[%d] connection established.\n", \
-            __FILE__, __FUNCTION__, __LINE__);
-    /*==========================log seng==========================*/
-#if 1
-    string buf1 = LOG_LOCATION;
-    guohui::logHandle* logHand_1 = new guohui::logHandle(buf1);
-    if(client1->getConnfd() > 0)
+    std::vector<guohui::tcpClient*>::iterator it;
+    int i = 0;
+    for(it = client_v.begin(); it!=client_v.end(); it ++)
     {
-        logHand_1->setSockfd(client1->getConnfd());
+        (*it)->newThread(threadIds[i], &guohui::tcpClientFunc, *it);
+        i++;
+        usleep(100000);
     }
-    else
-    {
-        printf("======file[%s] fun[%s] line[%d] error connfd:%d\n", \
-                __FILE__, __FUNCTION__, __LINE__, client1->getConnfd());
-        exit(-1);
-    }
-    newThread(threadIds[1], &guohui::logHandleFunc, logHand_1);
-#endif
+//    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf, buf1);
+//    newThread(threadIds[0], &guohui::tcpClientFunc, client1);
 
     for(;;)     //main thread
     {

@@ -11,12 +11,13 @@
 #include <fstream>
 #include <string.h>
 #include <iostream>
+#include "../tcpClient/createThread.h"
 
 using namespace std;
 
 namespace guohui
 {
-class logHandle
+class logHandle:public createThread
 {
 public:
     logHandle(string file);
@@ -28,6 +29,7 @@ public:
         else
             printf("======error sockfd!\n");
     }
+    void sendFileLineByLine();
 private:
     ifstream in_;
     char logFile_[256];

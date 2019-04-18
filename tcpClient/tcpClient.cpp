@@ -15,18 +15,25 @@ using namespace std;
 
 namespace guohui
 {
-tcpClient::tcpClient(int port, string addr):
+tcpClient::tcpClient(int port, string addr, string logfile):
         serverPort_(port),
         connfd_(0),
         mutex_(PTHREAD_MUTEX_INITIALIZER),
         cond_(PTHREAD_COND_INITIALIZER),
-        connStatus_(CONNECTING)
+        connStatus_(CONNECTING),
+        logHandle_(new guohui::logHandle(logfile))
 {
     strcpy(addr_, addr.c_str());
 //    printf("======port:%d addr:%s\n", serverPort_, addr_);
     serverAddr_.sin_family = AF_INET;
     serverAddr_.sin_port = htons(serverPort_);
     serverAddr_.sin_addr.s_addr = inet_addr(addr_);
+}
+
+tcpClient::~tcpClient()
+{
+    delete logHandle_;
+    logHandle_ = NULL;
 }
 
 bool tcpClient::buildConnect()
@@ -45,11 +52,12 @@ bool tcpClient::buildConnect()
     }
     else
     {
-        printf("======connect server:%s successful.\n", inet_ntoa(serverAddr_.sin_addr));
+        printf("======tid[%d] file[%s] fun[%s] line[%d] connect server:%s successful.\n", \
+                this->tid(), __FILE__, __FUNCTION__, __LINE__, inet_ntoa(serverAddr_.sin_addr));
         write(connfd_, "hello server, i am log client.\n", strlen("hello server, i am client.\n"));
     }
-    printf("======file[%s] fun[%s] line[%d] connfd:%d\n", \
-            __FILE__, __FUNCTION__, __LINE__, this->getConnfd());
+//    printf("======file[%s] fun[%s] line[%d] connfd:%d\n", \
+//            __FILE__, __FUNCTION__, __LINE__, this->getConnfd());
 
     pthread_mutex_lock(&mutex_);
     connStatus_ = CONNECTED;
@@ -65,18 +73,25 @@ void tcpClient::handle_connection()
     char recvline[MAXLINE] = {0};
 //    int maxfdp, stdineof;
     struct pollfd pfds[2];
-    /* 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
     int n;
     if(connfd_ < 0)
         return;
+    /* connected socket */
     pfds[0].fd = connfd_;
     pfds[0].events = POLLIN;
-    /* 锟斤拷颖锟阶硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟� */
+    /* standard input and output */
     pfds[1].fd = STDIN_FILENO;
     pfds[1].events = POLLIN;
     int cnt = 0;
     char buf[256] = {0};
     char buf1[256] = "hello, i am log client.";
+
+    //==========================send logFile line by line to logServer
+    pthread_t logHandleId;
+    if(this->newThread(logHandleId, &guohui::logHandleFunc, logHandle_))
+        printf("======file[%s] fun[%s] line[%d] logHandle thread created.\n", __FILE__, __FUNCTION__, __LINE__);
+    else
+        printf("======file[%s] fun[%s] line[%d] create logHandle thread failed!\n", __FILE__, __FUNCTION__, __LINE__);
 
     while(1)
     {
@@ -123,10 +138,16 @@ void tcpClient::condWait()
     return;
 }
 
+guohui::logHandle* tcpClient::get_logHandle_()
+{
+    return logHandle_;
+}
+
 void *tcpClientFunc(void *arg)
 {
     guohui::tcpClient *cp = (guohui::tcpClient*)arg;
-    cp->buildConnect();
+    if(cp->buildConnect())
+        cp->get_logHandle_()->setSockfd(cp->getConnfd());
     cp->handle_connection();
 }
 }       //namespace guohui
