@@ -33,11 +33,11 @@ void logHandle::sendlineToServer()
         }
         else
         {
-            cout <<"tid[%d]no such file"<<this->tid() << endl;
+            cout <<"tid["<<this->tid()<<"]no such file" << endl;
             in_.clear();
             in_.close();
             in_.open(logFile_);
-            cout <<"tid[%d] open %s again"<<this->tid()<< logFile_<< endl;
+            cout <<"tid["<<this->tid()<<"] open "<<logFile_<<" again"<< endl;
         }
 
         if(!line.empty())
@@ -60,11 +60,11 @@ void logHandle::sendFileLineByLine()
         }
         else
         {
-            cout <<"tid[%d]no such file"<<this->tid() << endl;
+            cout <<"tid["<<this->tid()<<"] no such file"<< endl;
             in_.clear();
             in_.close();
             in_.open(logFile_);
-            cout <<"tid[%d] open %s again"<<this->tid()<< logFile_<< endl;
+            cout <<"tid["<<this->tid()<<"] open "<<logFile_<<" again"<< endl;
         }
 
         if(!line.empty())

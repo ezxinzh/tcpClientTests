@@ -41,18 +41,18 @@ bool tcpClient::buildConnect()
     connfd_ = socket(AF_INET, SOCK_STREAM, 0);
     if( connfd_ < 0)
     {
-        printf("======socket error");
+        printf("======tid[%lu] socket error\n", this->tid());
         return false;
     }
 
     if(connect(connfd_, (struct sockaddr*)&serverAddr_, sizeof(serverAddr_)) < 0)
     {
-        printf("======connect failed");
+        printf("======tid[%lu] connect failed\n", this->tid());
         return false;
     }
     else
     {
-        printf("======tid[%d] file[%s] fun[%s] line[%d] connect server:%s successful.\n", \
+        printf("======tid[%lu] file[%s] func[%s] line[%d] connect server:%s successful.\n", \
                 this->tid(), __FILE__, __FUNCTION__, __LINE__, inet_ntoa(serverAddr_.sin_addr));
         write(connfd_, "hello server, i am log client.\n", strlen("hello server, i am client.\n"));
     }
@@ -89,9 +89,11 @@ void tcpClient::handle_connection()
     //==========================send logFile line by line to logServer
     pthread_t logHandleId;
     if(this->newThread(logHandleId, &guohui::logHandleFunc, logHandle_))
-        printf("======file[%s] fun[%s] line[%d] logHandle thread created.\n", __FILE__, __FUNCTION__, __LINE__);
+        printf("======tid[%lu] file[%s] func[%s] line[%d] logHandle thread created.\n", \
+                this->tid(), __FILE__, __FUNCTION__, __LINE__);
     else
-        printf("======file[%s] fun[%s] line[%d] create logHandle thread failed!\n", __FILE__, __FUNCTION__, __LINE__);
+        printf("======tid[%lu] file[%s] func[%s] line[%d] create logHandle thread failed!\n", \
+                this->tid(), __FILE__, __FUNCTION__, __LINE__);
 
     while(1)
     {
@@ -102,7 +104,7 @@ void tcpClient::handle_connection()
             n = read(pfds[0].fd, recvline, MAXLINE);
             if(n == 0)
             {
-                fprintf(stderr, "client:server is closed.");
+                fprintf(stderr, "tid[%lu] client:server is closed.\n", this->tid());
                 close(pfds[0].fd);
             }
             write(STDOUT_FILENO, recvline, n);
