@@ -15,6 +15,48 @@ using namespace std;
 
 namespace guohui
 {
+void *tcpClientFunc(void *arg)
+{
+    guohui::tcpClient *cp = (guohui::tcpClient*)arg;
+    if(cp->buildConnect())
+    {
+        bool connFlag = true;
+//        cp->get_logHandle_()->setSockfd(cp->getConnfd());
+        cp->get_logHandle_()->setConnPara(connFlag, cp->getConnfd());
+    }
+    else
+    {
+        printf("======tid[%lu] file[%s] func[%s] line[%d] connection not established!\n", \
+                        cp->tid(), __FILE__, __FUNCTION__, __LINE__);
+        exit(-1);
+    }
+//    usleep(1000);
+    cp->handle_connection();
+}
+
+void *rebuildConnFunc(void *arg)
+{
+    guohui::tcpClient *cp = (guohui::tcpClient*)arg;
+    int num = 0;
+    while(true)
+    {
+        num++;
+        if(cp->buildConnect())
+        {
+            printf("======tid[%lu] file[%s] func[%s] line[%d] reconnect server:%s successful.\n", \
+                                    cp->tid(), __FILE__, __FUNCTION__, __LINE__, \
+                                    inet_ntoa(cp->getServerAddr().sin_addr));
+            bool connFlag = true;
+            cp->get_logHandle_()->setConnPara(connFlag, cp->getConnfd());
+            pthread_exit(0);
+        }
+        usleep(10000000);
+        printf("======tid[%lu] file[%s] func[%s] line[%d] reconnect server:%s %d times.\n", \
+                cp->tid(), __FILE__, __FUNCTION__, __LINE__, \
+                inet_ntoa(cp->getServerAddr().sin_addr), num);
+    }
+}
+
 tcpClient::tcpClient(int port, string addr, string logfile):
         serverPort_(port),
         connfd_(0),
@@ -38,15 +80,15 @@ tcpClient::~tcpClient()
 
 bool tcpClient::buildConnect()
 {
-    connfd_ = socket(AF_INET, SOCK_STREAM, 0);
-    if( connfd_ < 0)
+    int connfd = socket(AF_INET, SOCK_STREAM, 0);
+    if( connfd < 0)
     {
         printf("======tid[%lu] socket error\n", this->tid());
         this->connStatus_ = CONNECTING;
         return false;
     }
 
-    if(connect(connfd_, (struct sockaddr*)&serverAddr_, sizeof(serverAddr_)) < 0)
+    if(connect(connfd, (struct sockaddr*)&serverAddr_, sizeof(serverAddr_)) < 0)
     {
         printf("======tid[%lu] connect failed\n", this->tid());
         this->connStatus_ = CONNECTING;
@@ -56,12 +98,13 @@ bool tcpClient::buildConnect()
     {
         printf("======tid[%lu] file[%s] func[%s] line[%d] connect server:%s successful.\n", \
                 this->tid(), __FILE__, __FUNCTION__, __LINE__, inet_ntoa(serverAddr_.sin_addr));
-        write(connfd_, "hello server, i am log client.\n", strlen("hello server, i am client.\n"));
+        write(connfd, "hello server, i am log client.\n", strlen("hello server, i am client.\n"));
     }
 //    printf("======file[%s] fun[%s] line[%d] connfd:%d\n", \
 //            __FILE__, __FUNCTION__, __LINE__, this->getConnfd());
 
     pthread_mutex_lock(&mutex_);
+    connfd_ = connfd;
     connStatus_ = CONNECTED;
     pthread_cond_signal(&cond_);
     pthread_mutex_unlock(&mutex_);
@@ -71,6 +114,7 @@ bool tcpClient::buildConnect()
 
 void tcpClient::handle_connection()
 {
+    pthread_mutex_lock(&mutex_);
     if(this->connStatus_ != CONNECTED)
     {
         printf("======tid[%lu] file[%s] func[%s] line[%d] connect server:%s failed!\n", \
@@ -78,15 +122,16 @@ void tcpClient::handle_connection()
         return;
     }
 
+//    printf("======tid[%lu] file[%s] func[%s] line[%d] do here.\n", \
+//                        this->tid(), __FILE__, __FUNCTION__, __LINE__);
+
     char sendline[MAXLINE] = {0};
     char recvline[MAXLINE] = {0};
-//    int maxfdp, stdineof;
     struct pollfd pfds[2];
     int n;
-    if(connfd_ < 0)
-        return;
     /* connected socket */
     pfds[0].fd = connfd_;
+    pthread_mutex_unlock(&mutex_);
     pfds[0].events = POLLIN;
     /* standard input and output */
     pfds[1].fd = STDIN_FILENO;
@@ -97,12 +142,17 @@ void tcpClient::handle_connection()
 
     //==========================send logFile line by line to logServer
     pthread_t logHandleId;
+    pthread_t reconnId;
     if(this->newThread(logHandleId, &guohui::logHandleFunc, logHandle_))
+    {
         printf("======tid[%lu] file[%s] func[%s] line[%d] logHandle thread created.\n", \
                 this->tid(), __FILE__, __FUNCTION__, __LINE__);
+    }
     else
+    {
         printf("======tid[%lu] file[%s] func[%s] line[%d] create logHandle thread failed!\n", \
                 this->tid(), __FILE__, __FUNCTION__, __LINE__);
+    }
 
     while(1)
     {
@@ -114,7 +164,19 @@ void tcpClient::handle_connection()
             if(n == 0)
             {
                 fprintf(stderr, "tid[%lu] client:server is closed.\n", this->tid());
+                connStatus_ = CONNECTING;
                 close(pfds[0].fd);
+
+                if(this->newThread(reconnId, &rebuildConnFunc, this))
+                {
+                    printf("======tid[%lu] file[%s] func[%s] line[%d] logHandle thread created.\n", \
+                            this->tid(), __FILE__, __FUNCTION__, __LINE__);
+                }
+                else
+                {
+                    printf("======tid[%lu] file[%s] func[%s] line[%d] create logHandle thread failed!\n", \
+                            this->tid(), __FILE__, __FUNCTION__, __LINE__);
+                }
             }
             write(STDOUT_FILENO, recvline, n);
             if(cnt >= 32767)
@@ -130,12 +192,14 @@ void tcpClient::handle_connection()
         if(pfds[1].revents & POLLIN)
         {
             n = read(STDIN_FILENO, recvline, MAXLINE);
+            pthread_mutex_lock(&mutex_);
             if(n == 0)
             {
                 shutdown(connfd_, SHUT_WR);
                 continue;
             }
             write(connfd_, recvline, n);
+            pthread_mutex_unlock(&mutex_);
         }
     }
 }
@@ -152,14 +216,6 @@ void tcpClient::condWait()
 guohui::logHandle* tcpClient::get_logHandle_()
 {
     return logHandle_;
-}
-
-void *tcpClientFunc(void *arg)
-{
-    guohui::tcpClient *cp = (guohui::tcpClient*)arg;
-    if(cp->buildConnect())
-        cp->get_logHandle_()->setSockfd(cp->getConnfd());
-    cp->handle_connection();
 }
 }       //namespace guohui
 

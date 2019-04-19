@@ -19,9 +19,6 @@
 
 using namespace std;
 
-#define THREAD_ANNOTATION_ATTRIBUTE__(x)   // no-op
-#define GUARDED_BY(x) \
-  THREAD_ANNOTATION_ATTRIBUTE__(guarded_by(x))
 #define MAXLINE 1024
 
 namespace guohui
@@ -41,19 +38,28 @@ public:
     void handle_connection();
     int getConnfd()
     {
-        return connfd_;
+        int connfd_temp;
+        pthread_mutex_lock(&mutex_);
+        connfd_temp = connfd_;
+        pthread_mutex_unlock(&mutex_);
+        return connfd_temp;
     }
     void condWait();
     guohui::logHandle* get_logHandle_();
+    sockaddr_in getServerAddr()
+    {
+        return serverAddr_;
+    }
 
 private:
     struct sockaddr_in serverAddr_;
     int serverPort_;
     char addr_[256];
-    int connfd_;
+
     pthread_mutex_t mutex_;
     pthread_cond_t cond_ GUARDED_BY(mutex_);
     connStatus_t connStatus_ GUARDED_BY(mutex_);
+    int connfd_ GUARDED_BY(mutex_);
     guohui::logHandle* logHandle_;
 };
 

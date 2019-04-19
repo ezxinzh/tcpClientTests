@@ -12,8 +12,13 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
+//#include <sys/syscall.h>
 
 using namespace std;
+
+#define THREAD_ANNOTATION_ATTRIBUTE__(x)   // no-op
+#define GUARDED_BY(x) \
+  THREAD_ANNOTATION_ATTRIBUTE__(guarded_by(x))
 
 class createThread
 {
@@ -35,6 +40,7 @@ public:
     pthread_t tid()
     {
         return pthread_self();
+//        return syscall(SYS_gettid);
     }
 };
 

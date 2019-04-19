@@ -25,14 +25,22 @@ public:
     void setSockfd(int sockfd)
     {
         if(sockfd > 0)
+        {
             sockfd_ = sockfd;
+            printf("======tid[%lu] file[%s] func[%s] line[%d] set sockfd:%d.\n", \
+                    this->tid(), __FILE__, __FUNCTION__, __LINE__, \
+                    sockfd_);
+        }
         else
             printf("======error sockfd!\n");
     }
     void sendFileLineByLine();
+    void setConnPara(bool connFlag, int sockfd);
 private:
     ifstream in_;
     char logFile_[256];
+    pthread_mutex_t mutex_;
+    bool connFlag_;
     int sockfd_;
 };
 

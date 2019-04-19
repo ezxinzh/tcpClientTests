@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     {
         (*it)->newThread(threadIds[i], &guohui::tcpClientFunc, *it);
         i++;
-        usleep(100000);
+        usleep(1000000);
     }
 //    guohui::tcpClient* client1 = new guohui::tcpClient(32006, buf, buf1);
 //    newThread(threadIds[0], &guohui::tcpClientFunc, client1);
